@@ -11,14 +11,14 @@ import {
   SiShopify, SiReact, SiNextdotjs, SiTypescript, SiPython, SiNodedotjs, 
   SiGraphql, SiDjango, SiTailwindcss, SiSass, SiWebflow, SiDocker, 
   SiKubernetes, SiTerraform, SiJenkins, SiVercel, SiAmazonwebservices, 
-  SiGooglecloud, SiAzure, SiOpenai, SiTensorflow, SiPytorch, 
+  SiGooglecloud, SiMicrosoftazure, SiOpenai, SiTensorflow, SiPytorch, 
   SiPandas, SiNumpy, SiScikitlearn, SiGooglesearchconsole, SiGoogleanalytics, 
   SiGoogleads, SiMeta, SiHubspot, SiJira, SiGit, SiGitlab, SiSlack, SiConfluence,
   SiWordpress, SiHotjar, SiPostman, SiRedis, SiSnowflake,
   SiGoogletagmanager, SiMarketo, SiAdobe, SiJupyter, SiBigcommerce, 
   SiVisualstudiocode, SiJavascript, SiJava, SiPhp, SiRuby, SiGo, SiRust,
   SiCplusplus, SiCsharp, SiSwift, SiKotlin, SiSupabase, SiNetlify,
-  SiMicrosoftteams, SiSalesforce
+  SiTeams, SiMicrosoftsharepointlegacy, SiSalesforce
 } from 'react-icons/si';
 
 const categories = [
@@ -345,7 +345,7 @@ const projects: Project[] = [
                             'vercel': SiVercel,
                             'aws': SiAmazonwebservices,
                             'gcp': SiGooglecloud,
-                            'azure': SiAzure,
+                            'azure': SiMicrosoftazure,
                             'openai': SiOpenai,
                             'tensorflow': SiTensorflow,
                             'pytorch': SiPytorch,
@@ -398,8 +398,8 @@ const projects: Project[] = [
                             'kotlin': SiKotlin,
                             'supabase': SiSupabase,
                             'netlify': SiNetlify,
-                            'teams': SiMicrosoftteams,
-                            'sharepoint': SiSharepoint,
+                            'teams': SiTeams,
+                            'sharepoint': SiMicrosoftsharepointlegacy,
                             'salesforce': SiSalesforce
                           }[skill.icon.toLowerCase()] || FaCode;
                           
