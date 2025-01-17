@@ -16,7 +16,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md">
+    <header className="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
@@ -25,7 +25,7 @@ export default function Header() {
           className="flex lg:flex-1"
         >
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent text-xl font-bold">
+            <span className="bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent text-2xl font-bold">
               Brian Pyatt
             </span>
           </Link>
@@ -52,7 +52,7 @@ export default function Header() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="hidden lg:flex lg:gap-x-12"
+          className="hidden lg:flex lg:gap-x-8 items-center"
         >
           {navigation.map((item) => (
             <Link
@@ -60,11 +60,19 @@ export default function Header() {
               href={item.href}
               target={item.external ? '_blank' : undefined}
               rel={item.external ? 'noopener noreferrer' : undefined}
-              className="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:text-green-600 dark:hover:text-green-400 transition-colors"
+              className="text-base font-semibold leading-6 text-gray-900 dark:text-gray-100 hover:text-green-600 dark:hover:text-green-400 transition-colors hover:scale-105 transform duration-200"
             >
               {item.name}
             </Link>
           ))}
+          <Link
+            href="/resume/BrianPyatt_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 text-base font-semibold text-white rounded-md bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-500 hover:via-blue-500 hover:to-purple-500 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+          >
+            Resume
+          </Link>
         </motion.div>
       </nav>
       {/* Mobile menu */}
@@ -76,19 +84,28 @@ export default function Header() {
       >
         {isOpen && (
           <div className="fixed inset-x-0 top-[73px] bottom-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50">
-            <div className="space-y-1 px-6 py-6">
+            <div className="space-y-4 px-6 py-8">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   target={item.external ? '_blank' : undefined}
                   rel={item.external ? 'noopener noreferrer' : undefined}
-                  className="block py-2 text-base font-semibold text-gray-900 dark:text-gray-100 hover:text-green-600 dark:hover:text-green-400"
+                  className="block py-3 text-lg font-semibold text-gray-900 dark:text-gray-100 hover:text-green-600 dark:hover:text-green-400"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
+              <Link
+                href="/resume/BrianPyatt_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full mt-6 px-6 py-4 text-lg font-semibold text-white text-center rounded-md bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-500 hover:via-blue-500 hover:to-purple-500 transition-all duration-200 shadow-lg hover:shadow-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                Resume
+              </Link>
             </div>
           </div>
         )}
