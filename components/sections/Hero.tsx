@@ -4,21 +4,24 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowRight, FaSearchDollar, FaChartLine, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
+import { 
+  FaArrowRight, FaSearchDollar, FaChartLine, FaMapMarkerAlt, 
+  FaCode, FaCloud, FaMicrosoft, FaWindows 
+} from 'react-icons/fa';
 import { TbSeo, TbChartBar } from 'react-icons/tb';
 import { BiTestTube } from 'react-icons/bi';
 import { 
   SiShopify, SiReact, SiNextdotjs, SiTypescript, SiPython, SiNodedotjs, 
   SiGraphql, SiDjango, SiTailwindcss, SiSass, SiWebflow, SiDocker, 
   SiKubernetes, SiTerraform, SiJenkins, SiVercel, SiAmazonwebservices, 
-  SiGooglecloud, SiMicrosoftazure, SiOpenai, SiTensorflow, SiPytorch, 
+  SiGooglecloud, SiOpenai, SiTensorflow, SiPytorch, 
   SiPandas, SiNumpy, SiScikitlearn, SiGooglesearchconsole, SiGoogleanalytics, 
   SiGoogleads, SiMeta, SiHubspot, SiJira, SiGit, SiGitlab, SiSlack, SiConfluence,
   SiWordpress, SiHotjar, SiPostman, SiRedis, SiSnowflake,
   SiGoogletagmanager, SiMarketo, SiAdobe, SiJupyter, SiBigcommerce, 
   SiVisualstudiocode, SiJavascript, SiJava, SiPhp, SiRuby, SiGo, SiRust,
   SiCplusplus, SiCsharp, SiSwift, SiKotlin, SiSupabase, SiNetlify,
-  SiTeams, SiMicrosoftsharepointlegacy, SiSalesforce
+  SiMicrosoft, SiSalesforce
 } from 'react-icons/si';
 
 const categories = [
@@ -345,7 +348,7 @@ const projects: Project[] = [
                             'vercel': SiVercel,
                             'aws': SiAmazonwebservices,
                             'gcp': SiGooglecloud,
-                            'azure': SiMicrosoftazure,
+                            'azure': FaCloud,
                             'openai': SiOpenai,
                             'tensorflow': SiTensorflow,
                             'pytorch': SiPytorch,
@@ -398,8 +401,8 @@ const projects: Project[] = [
                             'kotlin': SiKotlin,
                             'supabase': SiSupabase,
                             'netlify': SiNetlify,
-                            'teams': SiTeams,
-                            'sharepoint': SiMicrosoftsharepointlegacy,
+                            'teams': FaMicrosoft,
+                            'sharepoint': FaWindows,
                             'salesforce': SiSalesforce
                           }[skill.icon.toLowerCase()] || FaCode;
                           
