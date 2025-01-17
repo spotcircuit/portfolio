@@ -6,7 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { 
   FaArrowRight, FaSearchDollar, FaChartLine, FaMapMarkerAlt, 
-  FaCode, FaCloud, FaMicrosoft, FaWindows 
+  FaCode, FaCloud, FaMicrosoft, FaWindows, FaJava, FaVisualStudio,
+  FaHashtag
 } from 'react-icons/fa';
 import { TbSeo, TbChartBar } from 'react-icons/tb';
 import { BiTestTube } from 'react-icons/bi';
@@ -19,8 +20,8 @@ import {
   SiGoogleads, SiMeta, SiHubspot, SiJira, SiGit, SiGitlab, SiSlack, SiConfluence,
   SiWordpress, SiHotjar, SiPostman, SiRedis, SiSnowflake,
   SiGoogletagmanager, SiMarketo, SiAdobe, SiJupyter, SiBigcommerce, 
-  SiVisualstudiocode, SiJavascript, SiJava, SiPhp, SiRuby, SiGo, SiRust,
-  SiCplusplus, SiCsharp, SiSwift, SiKotlin, SiSupabase, SiNetlify,
+  SiJavascript, SiPhp, SiRuby, SiGo, SiRust,
+  SiCplusplus, SiSwift, SiKotlin, SiSupabase, SiNetlify,
   SiMicrosoft, SiSalesforce
 } from 'react-icons/si';
 
@@ -388,15 +389,15 @@ const projects: Project[] = [
                             'adobe': SiAdobe,
                             'jupyter': SiJupyter,
                             'bigcommerce': SiBigcommerce,
-                            'vscode': SiVisualstudiocode,
+                            'vscode': FaVisualStudio,
                             'javascript': SiJavascript,
-                            'java': SiJava,
+                            'java': FaJava,
                             'php': SiPhp,
                             'ruby': SiRuby,
                             'go': SiGo,
                             'rust': SiRust,
                             'cpp': SiCplusplus,
-                            'csharp': SiCsharp,
+                            'csharp': FaHashtag,
                             'swift': SiSwift,
                             'kotlin': SiKotlin,
                             'supabase': SiSupabase,
