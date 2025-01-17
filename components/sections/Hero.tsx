@@ -21,7 +21,7 @@ import {
   SiGoogletagmanager, SiMarketo, SiAdobe, SiJupyter, SiBigcommerce, 
   SiJavascript, SiPhp, SiRuby, SiGo, SiRust,
   SiCplusplus, SiSwift, SiKotlin, SiSupabase, SiNetlify,
-  SiMicrosoft, SiSalesforce
+  SiSalesforce
 } from 'react-icons/si';
 
 const categories = [
