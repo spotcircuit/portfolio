@@ -427,10 +427,10 @@ const projects: Project[] = [
                   ))}
                 </div>
               </div>
-              <div className="mt-10 flex items-center gap-x-6">
+              <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-x-6">
                 <Link
                   href="#contact"
-                  className="px-8 py-4 text-lg font-semibold text-white rounded-md bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-500 hover:via-blue-500 hover:to-purple-500 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-md bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-500 hover:via-blue-500 hover:to-purple-500 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
                 >
                   Get in touch
                 </Link>
@@ -438,7 +438,7 @@ const projects: Project[] = [
                   href="/resume/BrianPyatt_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 text-lg font-semibold text-white rounded-md bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 hover:from-blue-500 hover:via-purple-500 hover:to-green-500 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold text-white rounded-md bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 hover:from-blue-500 hover:via-purple-500 hover:to-green-500 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
                 >
                   View Resume
                 </Link>

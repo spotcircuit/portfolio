@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -75,40 +75,47 @@ export default function Header() {
           </Link>
         </motion.div>
       </nav>
+
       {/* Mobile menu */}
       <motion.div
         initial={{ opacity: 0, height: 0 }}
-        animate={{ opacity: isOpen ? 1 : 0, height: isOpen ? 'auto' : 0 }}
-        transition={{ duration: 0.3 }}
+        animate={{ 
+          opacity: isOpen ? 1 : 0,
+          height: isOpen ? 'auto' : 0,
+          display: isOpen ? 'block' : 'none'
+        }}
+        transition={{ duration: 0.2 }}
         className="lg:hidden"
       >
-        {isOpen && (
-          <div className="fixed inset-x-0 top-[73px] bottom-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50">
-            <div className="space-y-4 px-6 py-8">
+        <div className={`fixed inset-x-0 top-[65px] bottom-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 ${isOpen ? 'block' : 'hidden'}`}>
+          <div className="flex flex-col px-4 pt-2 pb-4 space-y-2 divide-y divide-gray-200 dark:divide-gray-700">
+            <div className="py-4 space-y-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   target={item.external ? '_blank' : undefined}
                   rel={item.external ? 'noopener noreferrer' : undefined}
-                  className="block py-3 text-lg font-semibold text-gray-900 dark:text-gray-100 hover:text-green-600 dark:hover:text-green-400"
+                  className="block px-4 py-3 text-base font-semibold text-gray-900 dark:text-gray-100 hover:text-green-600 dark:hover:text-green-400 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
+            </div>
+            <div className="py-4">
               <Link
                 href="/resume/BrianPyatt_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full mt-6 px-6 py-4 text-lg font-semibold text-white text-center rounded-md bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-500 hover:via-blue-500 hover:to-purple-500 transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="block w-full px-4 py-3 text-base font-semibold text-white text-center rounded-lg bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 hover:from-green-500 hover:via-blue-500 hover:to-purple-500 transition-all duration-200 shadow-md hover:shadow-lg"
                 onClick={() => setIsOpen(false)}
               >
-                Resume
+                View Resume
               </Link>
             </div>
           </div>
-        )}
+        </div>
       </motion.div>
     </header>
   );
