@@ -6,8 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { 
   FaArrowRight, FaSearchDollar, FaChartLine, FaMapMarkerAlt, 
-  FaCode, FaCloud, FaMicrosoft, FaWindows, FaJava, FaVisualStudio,
-  FaHashtag
+  FaCode, FaCloud, FaMicrosoft, FaWindows, FaJava, FaHashtag
 } from 'react-icons/fa';
 import { TbSeo, TbChartBar } from 'react-icons/tb';
 import { BiTestTube } from 'react-icons/bi';
@@ -389,7 +388,7 @@ const projects: Project[] = [
                             'adobe': SiAdobe,
                             'jupyter': SiJupyter,
                             'bigcommerce': SiBigcommerce,
-                            'vscode': FaVisualStudio,
+                            'vscode': FaCode,
                             'javascript': SiJavascript,
                             'java': FaJava,
                             'php': SiPhp,
