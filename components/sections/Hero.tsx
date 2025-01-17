@@ -4,25 +4,22 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaSearchDollar, FaChartLine, FaMapMarkerAlt, FaCode } from 'react-icons/fa';
+import { TbSeo, TbChartBar } from 'react-icons/tb';
+import { BiTestTube } from 'react-icons/bi';
 import { 
   SiShopify, SiReact, SiNextdotjs, SiTypescript, SiPython, SiNodedotjs, 
   SiGraphql, SiDjango, SiTailwindcss, SiSass, SiWebflow, SiDocker, 
   SiKubernetes, SiTerraform, SiJenkins, SiVercel, SiAmazonwebservices, 
-  SiGooglecloud, SiMicrosoftazure, SiOpenai, SiTensorflow, SiPytorch, 
+  SiGooglecloud, SiAzure, SiOpenai, SiTensorflow, SiPytorch, 
   SiPandas, SiNumpy, SiScikitlearn, SiGooglesearchconsole, SiGoogleanalytics, 
   SiGoogleads, SiMeta, SiHubspot, SiJira, SiGit, SiGitlab, SiSlack, SiConfluence,
-  SiWordpress, SiHotjar, SiPostman, SiRedis, SiSnowflake, SiGoogleoptimize,
+  SiWordpress, SiHotjar, SiPostman, SiRedis, SiSnowflake,
   SiGoogletagmanager, SiMarketo, SiAdobe, SiJupyter, SiBigcommerce, 
   SiVisualstudiocode, SiJavascript, SiJava, SiPhp, SiRuby, SiGo, SiRust,
   SiCplusplus, SiCsharp, SiSwift, SiKotlin, SiSupabase, SiNetlify,
-  SiMicrosoftteams, SiMicrosoftsharepoint, SiSalesforce, SiMixpanel,
-  SiOptimizely, SiMailchimp, SiIntercom } from 'react-icons/si';
-import { FaSearchDollar, FaChartLine, FaRobot, FaMapMarkerAlt, FaCode, FaBrain, 
-  FaChartBar, FaShoppingCart, FaStore, FaGoogle, FaShoppingBag, FaBolt, 
-  FaCloud, FaWindows } from 'react-icons/fa';
-import { BiTestTube } from 'react-icons/bi';
-import { TbSeo, TbBrandOpenai, TbChartBar, TbBolt } from 'react-icons/tb';
+  SiMicrosoftteams, SiSalesforce
+} from 'react-icons/si';
 
 const categories = [
   {
@@ -348,7 +345,7 @@ const projects: Project[] = [
                             'vercel': SiVercel,
                             'aws': SiAmazonwebservices,
                             'gcp': SiGooglecloud,
-                            'azure': TbBolt,
+                            'azure': SiAzure,
                             'openai': SiOpenai,
                             'tensorflow': SiTensorflow,
                             'pytorch': SiPytorch,
@@ -386,15 +383,8 @@ const projects: Project[] = [
                             'gtm': SiGoogletagmanager,
                             'marketing': SiMarketo,
                             'adobe': SiAdobe,
-                            'anthropic': FaBrain,
-                            'perplexity': FaRobot,
-                            'notebook': SiJupyter,
-                            'lmstudio': TbBrandOpenai,
-                            'napkin': FaChartBar,
+                            'jupyter': SiJupyter,
                             'bigcommerce': SiBigcommerce,
-                            'gmb': FaGoogle,
-                            'merchant': FaShoppingBag,
-                            'shopping': FaShoppingCart,
                             'vscode': SiVisualstudiocode,
                             'javascript': SiJavascript,
                             'java': SiJava,
@@ -409,21 +399,9 @@ const projects: Project[] = [
                             'supabase': SiSupabase,
                             'netlify': SiNetlify,
                             'teams': SiMicrosoftteams,
-                            'sharepoint': SiMicrosoftsharepoint,
-                            'bolt': TbBolt,
-                            'windsurf': FaWindows,
-                            'salesforce': SiSalesforce,
-                            'mixpanel': SiMixpanel,
-                            'optimizely': SiOptimizely,
-                            'mailchimp': SiMailchimp,
-                            'intercom': SiIntercom,
-                            'rankmath': SiWordpress,
-                            'yoast': SiWordpress,
-                            'leadgen': FaChartLine,
-                            'funnel': FaChartBar,
-                            'research': FaSearchDollar,
-                            'heatmap': SiHotjar,
-                          }[skill.icon];
+                            'sharepoint': SiSharepoint,
+                            'salesforce': SiSalesforce
+                          }[skill.icon.toLowerCase()] || FaCode;
                           
                           return (
                             <motion.div
