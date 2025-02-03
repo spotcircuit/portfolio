@@ -1,0 +1,48 @@
+{
+  "visual_styles": [
+    {
+      "id": 188,
+      "name": "Full Screen(New)"
+    },
+    {
+      "id": 191,
+      "name": "Avatar Bubble"
+    },
+    {
+      "id": 193,
+      "name": "Floating Avatar Voiceover"
+    },
+    {
+      "id": 194,
+      "name": "Inclined Floating Avatar"
+    },
+    {
+      "id": 190,
+      "name": "Up&Down Avatar"
+    },
+    {
+      "id": 192,
+      "name": "Rotary Switch"
+    },
+    {
+      "id": 195,
+      "name": "Floating Avatar"
+    },
+    {
+      "id": 187,
+      "name": "UGC Content"
+    },
+    {
+      "id": 119,
+      "name": "FullScreen"
+    },
+    {
+      "id": 147,
+      "name": "Simple Product Switch"
+    },
+    {
+      "id": 171,
+      "name": "No Gaussian blur"
+    }
+  ]
+}

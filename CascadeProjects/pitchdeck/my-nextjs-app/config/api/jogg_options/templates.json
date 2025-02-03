@@ -1,0 +1,886 @@
+{
+  "templates": [
+    {
+      "id": 426,
+      "name": " Emoji Magic",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-13/729a8df1a2cb408fbf192f3b3b080845.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/eb514b46-c76d-44ed-810a-b21af519c8ce_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 425,
+      "name": "Popular Blogger",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-13/4f74ca3c0e444029b502cbfa7f2bc467.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/25f7a64e-a226-4258-b224-f39e085c1837_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 424,
+      "name": "Authentic footage",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-13/d911d706574846dc9d782ebd457bcc7f.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/4b17e0c4-03cc-4f1b-b499-5a0aff808281_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 558,
+      "name": "Small tabletop games",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/68667a8f565f4d4d8fff1a1b4a777808.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/caa17efd-95ce-4cb6-933e-bbb05b2841f1_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 555,
+      "name": "Party Time",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/3d898477aba641f3b940edd7857d2478.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/9f974efb-c5c3-4e4a-966a-171ace97fe7c_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 556,
+      "name": "Cozy little home",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/106f8e51a76d4c68966c329229892e50.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/e17a5130-8889-4760-9675-d9165aa8c8ce_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 559,
+      "name": "A cozy corner of home",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/614c21c48ef84b41bab84ca6393b1504.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/9ab8d94e-ec1b-46c5-aa30-1ada04bdaaa3_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 551,
+      "name": "Household Essentials",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/38483d31200f41e7b302d6aa0f70ccc6.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/d3c446ac-b0df-4d76-809a-84dddfbc86df_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 532,
+      "name": "Outreach - CEO's Letter",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/892779e38ae24d20b020ebaa1dfe5696.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/6d624393-ce40-407c-99b1-97d2d22cf87b_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 538,
+      "name": "Outreach - Car Sales",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/3fda80824d9a48cdbfe989c0854fd8c2.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/2a73edd7-1b25-43de-b09f-10e95b6ce5b6_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 541,
+      "name": "Outreach - Agent",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/2170abdbe1174021b47930c6ba466a85.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/bcf58bfd-bd34-4920-9a5c-cbb8f43a8196_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 540,
+      "name": "Outreach - Education",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/b36262d5dbf1438abcb17b247deac47f.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/067321e9-64c2-4358-9a75-00b3c1a27d39_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 542,
+      "name": "Outreach - Medical",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/4ab78b89a6ed44eca646ced52040338d.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/1bbf2cd0-48c7-4570-ac30-95a21d2a097c_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 534,
+      "name": "Outreach - Tour Guide",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/08c3d5a829b549c796c89ceffc15c17c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/b908789a-683d-405f-becc-755bf039357f_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 535,
+      "name": "Outreach - Sports Coach",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/fa290e215b50425eaa79063899042c61.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/edae3fd8-8963-43b5-bc82-95ce796f416e_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 539,
+      "name": "Outreach - Insurance",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-15/f7330aff0c8043da9512b2149194ba0a.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-15/9680eaa9-9c09-442b-bafa-09e64b7b67dd_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 531,
+      "name": "Cat Driver Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/6a0ad6875a9f42d7ba9b956eda78cecd.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/1a0b0a31-df35-4880-a7d5-751cd649469e_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 530,
+      "name": "Excited Man Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/8682de25faca4658a4ae261d4b75292b.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/efb3d0aa-d61e-4057-bbf8-0c488240138b_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 529,
+      "name": "Typing Cat Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/834c639bfc0b457a876020a98fb33c78.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/fd1b6ccf-f8d4-4e24-bea3-8f98e7bd4d38_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 527,
+      "name": "Happy Cat Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/5882d62880494bc7af601e8a3157970c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/6858460f-b594-4555-8fc8-530deea2b4c4_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 528,
+      "name": "Crying Boy Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/692c8b797cec4c348feaed7d78903ca7.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/02ad2e2f-08e3-43fb-9485-0e183aa6a672_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 525,
+      "name": "Beaten Cat Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/fd40b463fc594b8ebc3d1381d696b87c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/e65da56c-1b61-4499-bad7-8b5388127617_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 526,
+      "name": "Sweating Man Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/a651027b97f04a3c8d36eb7974702b28.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/a5e9620c-dcae-4edb-a257-8fccb3d1ad53_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 524,
+      "name": "Numb Cat Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/575789db9f824c30819c839b55dfee81.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/b33cabf1-26ba-497c-9852-a703ead5a85c_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 523,
+      "name": "Surprised Man Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/0b51bc68bf7943839184eafb5749fc82.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/4108033d-fa0b-4df2-b7e4-e9d11276caf1_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 522,
+      "name": "Facepalm Crowd Meme",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-08/2d318df8a9684ce9842229ece04cb9cf.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/8feb2cdc-d0eb-4621-a120-9fd9a2fd138a_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 232,
+      "name": "Pop lifestyle",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-08/231ea10f9b0847f0b32d5ed2c34b1036.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-08/4643e837-616f-408e-87d4-228daad085c8.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 236,
+      "name": "Comfort and softness",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-28/cbeb6c1b476e415992e3aeae6ea15008.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-28/eb83d1ac-15b1-4617-8180-eccb5d26857d.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 234,
+      "name": "Let's get active together!",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-27/1730022323580-1ff0ed0e3333d6bde2272dfc4e7f5b112aefbd5b-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-28/9d45a265-438f-4bcf-9dda-49202de0f72e.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 259,
+      "name": "Science Fiction Time",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-06/7684991ec08a4bfbb3def20c447a0760.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-06/5881ad9f-ae33-49bc-8512-a80d5d8aeecc.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 225,
+      "name": "Modern Rectangle INS Elements",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729863904887-68f31cde2d2b65965c442f838667e4f7ca8f67d1-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/b34aba25-473d-43d6-953c-fb55d14e1395_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 256,
+      "name": "Relax and unwind",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-28/447c6c8be9cb443ea5bca2bca39ba80a.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/0526234b-775b-49e8-8ba0-1b7bbd76f10b_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 215,
+      "name": "Cozy Elegance",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/bd0ff3e6f4e040b296c553aa9319cf04.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/599aa5a5-8593-4178-82d8-2e812943ddd9_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 218,
+      "name": "Soy Smiley Faces",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729864066822-76a2a303157d1bdbfbbfe100f0b55c5948bae123-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/e1a87134-26d3-4098-9467-819cc9d20fa4_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 460,
+      "name": "Gym Advertisement Pink - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-17/0abbd70065434aca82869ce8945659e4.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-12-17/9cca1c7c-2b1d-43c6-9eb5-64e141fae91e_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 365,
+      "name": "High-end texture",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/5b6237c17f304ff4ab953c3e96998d2c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/9495ed95-fcd3-4d66-827f-96d1d56ce74d_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 362,
+      "name": "Orange&Gray - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-20/1f5aa31881134c7e8843d533656815f1.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/caf2d4d2-0737-4ed7-b1d9-fde0fcb03565_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 493,
+      "name": "Recommend an APP! - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/99c0e2f232624a92b1157f577d08e83b.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/457ef5a6-450e-401c-8b42-0ba6421abdf4_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 447,
+      "name": "Cyber electronic",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-17/3df2b565998c4ed8b6d254aadccf6bd1.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-12-17/0722309f-b3b4-449b-9a41-af3ad2df68d8_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 264,
+      "name": "App Silky Blue",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-06/428ca93724bf4e14838741c30cd2f52d.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/65331fd7-03dc-4530-bef9-e80e7141ab35_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 516,
+      "name": "Stylish Slices - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/74ed1f8657bb4fc8ab85c80ce15157b7.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/ddb15aab-c546-4eb7-846a-79e773c96437_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 490,
+      "name": "Pinkish Game",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/54b695b6b025411e988aa397965dd8a1.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/4e079bef-41ea-4bdc-a6b9-96ceb2646575_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 487,
+      "name": "Gaming Session",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/c2a76b235b76413aab4bda9c04cc6114.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/c7eb66ae-9685-41b4-8636-935f119eeddf_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 359,
+      "name": "Magic Neon Green - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-20/e60a94d35111411796a6306d60164e89.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/d70db594-3b75-4c6c-9643-0c10ba20b345_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 484,
+      "name": "Light Purple Fresh",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/e6bb1127c94d42bcbb1667bf350a83ce.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/d703a34e-97a3-46ab-842b-f9e84c4cc095_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 467,
+      "name": "Cool sports",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/793eb468742845a6b51e5d006381fbfc.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/5736e19a-6c9b-4d46-8e9e-1a29b9fd751d_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 464,
+      "name": "Summer sports promotion",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/985dd97f72f94a70a479afb554f03a0e.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/356975d9-0191-436b-8dd7-a787f2758a9d_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 451,
+      "name": "Tech Deep Purple",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/6287d1c9a9e540819d99bcc71e397801.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/917a8126-7bbc-49e4-aca6-66f9cc6244fa_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 341,
+      "name": "Gentle Pink Mood",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-28/9f558f3e45a141d7aa955aff13c25440.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/ac6ffcff-e34f-4678-84ac-edf251778bf0_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 462,
+      "name": "Community Gym",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/9205c5c7c4b24d08ada5f8b10747cf4b.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/69a97e1f-599f-4480-96f9-8851a0fb49a4_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 347,
+      "name": "Soft satin gold",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/5188469dad9342958e69e7f2394e4c89.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/08273de3-0308-4a89-93e5-cad84d64fd77_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 233,
+      "name": "Technological Glamour",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/839eb214ffdf48a4b9ead722af59529c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/4fbb1af1-a394-4d44-8265-5908a7db6c6a_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 351,
+      "name": "Minimalist pink - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-28/398e86fe3e6c4da08f3dfc83c044b6a4.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/d06764da-3c17-4bdf-bf0a-9c2b41d69e1b_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 513,
+      "name": "Yellow Outfit Guide - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/6f7ca89d154840c6be9cf3e08a7a10eb.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/0bf782d8-4499-4393-a95a-88c4bcfe1b77_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 510,
+      "name": "Toy Castle - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/7cfc60c785914fb290e21959e1ac7a57.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/e1529c76-9ce6-46a8-8c57-7b354b76e164_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 502,
+      "name": "Deep Purple App",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/57ec41766a8740f3a907c7d97790ee42.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/91afe5ed-b449-48a4-a184-b3290841af13_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 499,
+      "name": "App Showcase: Blue",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/00289b7bb5ce40adb32aa4437b8e8dec.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/3ca82cee-29c1-4758-9288-79b0c776086f_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 496,
+      "name": "Technological Elegance",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-20/801d3a8caecd43c8ad15af2a3590ce66.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/6944aab2-3d7a-41cd-a7d0-7839bba07c16_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 383,
+      "name": "Tender as water",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-28/c6ce9aadb06e4df5bea95cccad3eb1c0.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/5cae81e8-5ca8-4802-9ccb-12785284aaa9_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 380,
+      "name": "Serene elegance",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-28/26c44202d3ec49cfb960d4eb94346c56.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/38dd6b6d-41e9-4d67-a10a-5d26855dc444_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 375,
+      "name": "Gentle and refined - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-22/382133c300024590a983442a36e4925b.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/96692b8b-eef4-4ee3-ba8b-535a431fdd4d_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 235,
+      "name": "Elegance Beauty",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-28/019296953c4e46a784ef745f8dda88d1.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-28/1d77b784-f1ed-40b4-97c6-d0899ed12987.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 478,
+      "name": "Kitchen Buddy",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-03/5bfa590ddb09410b8e8bdfc499ab2421.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-03/b936aab8-e39c-4a50-a291-d9311c69230e_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 454,
+      "name": "Oil painting",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-17/a8231d82cc9f45a5bed0fba37ac9e003.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-12-17/5aef1180-c1fe-4d9f-b719-3cd26960f3d7_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 304,
+      "name": "The Grid Fairy Tales",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/0ff8d2c708c3419b91c2843d388b0631/1731415239408-98003443af7371afe29fa19dfd24e861b6ae3848-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-13/a9eba4ea-8b63-4897-894f-93556c410ecc.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 298,
+      "name": "Sleek Simplicity",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/458f078db8c3494ea61d8f8a74fb67db/1731379909815-be21e930b3734b74d5c49162527cfc4c0c67c6d4-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-13/04700e80-09ce-4d75-ba2e-a27a6ea9ed6d.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 313,
+      "name": "Professional Panache",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/5aedac1f74bd46988dde6bfa3fbc6a93/1731481958218-0a2d634bb218013b39bc8e1fd2fea84d4a44639e-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-13/e406bdee-3a82-4dee-a27a-fe04654746d3.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 310,
+      "name": "Flat painting style",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/6daa9eb5db8b490c8fee279cca8bb7d6/1731478467414-43005a402c8ca1dcffcf46d57b316cd87ff041ea-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-13/0bf33f88-b899-4b59-a9cd-218f7b46eb6b.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 307,
+      "name": "Casual Illustrations",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-28/aaa85d04382748e6a194a11dd6c04530.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/28759248-7f4a-488d-b678-57bb19615670_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 301,
+      "name": "Academic style",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/4e61d764e30844a78c5ed88efc214046/1731383621121-b9a8b827df0807e272231a793307f00d00dce264-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-13/171b78f5-c066-4dc9-ab68-2e54ed7aa97f.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 292,
+      "name": "Dream Home Awaits",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-11/09d34ee5936840fcbed7bfe82157fb49.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-11/21cf0819-f477-421d-a6bd-f9946232fdc4.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 295,
+      "name": "Luxury Living Redefined",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-11/ef33290429cf49fe9c61b79664fed80a.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-11/63cce611-1795-4737-819e-3dc8973f631f.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 285,
+      "name": "Luxury Gold",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-28/24a9dc7abb8746e1a7558d91afcfca42.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/048586cc-d354-4ddc-a87e-9d2a67865b32_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 288,
+      "name": "Mocha Time",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/19df4196f49f46e0ad82faebed21eb7a/1731308242092-ca833e272abf53efd98e43c20514fb6468199926-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-11/549e3bb4-29c5-45db-8b87-d4e8ac91d85c.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 282,
+      "name": "Modern style houses",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-11/7d3a287ff18249acb1131b4d5e04772c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-11/1043b1bc-4d10-46e3-b367-9e920ec24e39.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 279,
+      "name": "Elegant and Concise",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-11/dbe0a2d5cbe74138ae718395515f5c34.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-11/8aacd9b0-f9a9-4d3d-b690-3a5fc483e0ff.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 337,
+      "name": "Enchanted Garden Bistro",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/ebfbf193be0b47b39e10a2d5985bd7d1/1731643287609-66d59f9e63784c9fdeb55d7c1762457588158dc3-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-15/395717b1-75fb-4f3d-9345-b86d3963c1bf.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 334,
+      "name": "Joyful Feast",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/14eb7e0887ee41a78ce51defa433f933.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-15/0033c537-5abd-4d2d-9b26-7f19d2472830.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 330,
+      "name": "BOB Restaurant",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/a019eca9472f4d58b8b39f3838d9c991/1731580314676-0b4ab7da394af51cbe4e3da88b31cc6132b0be16-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-15/d91796c0-4841-41fe-82df-8f25c295079a.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 327,
+      "name": "Twilight Citrus",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/36a2b1af0efa455bbaef9b0cb4bf3f0b/1731579247233-d2fab58f2e07f78f1315bf13b58b257f642c5200-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-15/acb7427a-824c-45b1-aaad-7783ee871d67.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 324,
+      "name": "Culinary delights",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/ae16a4b3a65441d6816d08352580b7b6/1731577961475-42f0ffc9535c273dd616936cda398e8eb3d85460-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-15/246fe78c-d014-41ea-8f20-c8ee275e7ab9.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 321,
+      "name": "Red Velvet Cake",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/a2f433464c0d4c30895fb127bf4cbeb7/1731577349595-7bf7b2f1f875e3c6c9af9a92de0d76e6f58cbef5-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-15/388179fb-9103-4654-a469-a40b242615a6.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 472,
+      "name": "Let's get moving",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-27/17e4cc8f6597495993df8dcb74872d27.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-12-27/acb0fe87-d3d6-4a16-a707-f84c2131df85_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 387,
+      "name": "Fresh green - No Avatars",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-27/5909447d5b1845ccb98a79e1be0c0eed.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-28/fe82b4a1-5ea4-4bc6-8293-7969c9025267_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 214,
+      "name": "Toyland Cartoon Stickers",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729864118885-ee1ae4bdd0a58a121c06ddf02456300259968a35-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/f814eee4-b48d-4d95-9da7-e8efa555e629.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 180,
+      "name": "Paper Texture Overlay",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-21/a9021ead58f94f2f9f0269eceae60b2d.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-21/095c2f08-eb68-4d17-8400-f2b17db01239.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 216,
+      "name": "Refined Coziness",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729864097002-982824a8a6b44ff88a9a7c1f9f9c75499127d761-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/c48c748c-7b27-46f8-aebf-4844ffd43730.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 217,
+      "name": "Frame Focus UI",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729864079118-cbe788293e1248253803c35c405b6a7d84f7ce95-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/d1c9fc4d-28d8-4d0b-94d6-2b5552fa6920.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 219,
+      "name": "Sleek Border Presentation",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-03/7f03a093bf0b4a4e8e5dee13216b1728.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/7b5d0e4b-da8f-42be-bac4-423c997987af_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 231,
+      "name": "Old family albums",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-27/435c168500b04db68c769b8c5fcd5e32.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/a64e5fa5-ade9-4c12-87fd-bca02d20dbe2_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 220,
+      "name": "Pixel Playground Fun",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729864014684-842cd898c47e621fc15ecf8478cf708612bbdae6-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/f0faf33d-a3f5-44a7-a22b-bff8d68f8920_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 222,
+      "name": "Dynamic Motion Templates",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-25/c2dd053ef8e44977bf2400e4f52f6cb6.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/46b5945e-d117-4f34-85c2-a9a0f99ab35d_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 543,
+      "name": "Recommended Products",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/11f06311af4e4e489731afcc06f6f4cd.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/48fcfe96-4eea-4005-b22d-07aa794ebf08_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 224,
+      "name": "Opulent Warmth Designs",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729863929263-57a7e7d63f4eaca2f7ed275a2f953138fff7773a-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/1827af3a-a91f-46a7-9275-e854e793df42_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 545,
+      "name": "Healthy Exercise",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/3df0047debae4a029b69d43b3baf2ace.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/371fd769-968f-444a-a110-32566b714be3_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 546,
+      "name": "Life Hacks",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/fa050ad09b3647b99b818130ab99e13e.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/c7679438-b250-460d-98b4-0d3ca3406325_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 548,
+      "name": "Fitness Time",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/6c83e9e12e204ea7a1cad6b590b08cba.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/d821e2ce-acb6-4f64-8a6d-5271cdaa95dd_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 547,
+      "name": "Travel Enthusiast",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/67db48fcce0e43d8a227d8378bf8df1c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/8b4adeef-79d9-4685-b6ce-a9e781ebda33_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 549,
+      "name": "Let's spa together!",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/3a27d707c7634862874a1b0085c052aa.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/0f929c62-6cc6-4066-9a58-0df452b05c69_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 550,
+      "name": "Daily Necessities",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/47466b80528640fe9417b9fa8ba44501.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/e5ec10be-798a-42d7-952c-f41084f83cdb_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 552,
+      "name": "LEGO Toys",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/6e943c7b0cc849488993a7223e82f09a.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/146bd34b-5a04-41ee-9d48-3b868e7bd545_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 553,
+      "name": "Camera Peripherals",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/578b1f83a58d4660bcbcd3c22b9a9b60.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/91c2b632-2cc1-45a3-a914-68aaa438bace_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 374,
+      "name": "Cozy Fairy Tale Books",
+      "cover_url": "https://res.jogg.ai/joggUserData/project/b5e78facb31045c3a6319fa9e12c01b5/1731988953032-811482da94015679664659fb163d63af0cb9ff09-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-20/e979a9f5-63c0-4808-810b-400e84bb2620.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 371,
+      "name": "Fresh and Childlike",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-20/e91521dde6ea429a99b8f31ce9978384.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-20/8f78a580-ad07-4b6f-b9c2-0f48b3054bb2.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 208,
+      "name": "Cartoon Toy Stickers",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729863778617-e15cdcbdd93bea836d8851055077586ddb5971ce-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/cb1ca673-b255-47d0-b31f-0d9f9e7396f2_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 207,
+      "name": "Playful Toy Characters",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729863639618-3fa9b43da796ce8ffe92bd41f8c5fc7ca4482619-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/454e8287-a03c-40c3-b752-85a1bbe59ece.webm",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 201,
+      "name": "Cartoon Toy Stickers2",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-25/73b81e707a3949e28e5bbca4f1979509.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/9f00662b-c587-47a7-8053-4023023376f7_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 554,
+      "name": "Beauty Influencer",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/cd7d41270385474295c748eec3528a7c.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/fd0b0a8b-e1b9-42c6-bd50-51523f1d029d_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 544,
+      "name": "Comfortable Tips",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/8de7766512d54ecd809b7d13031b7f8b.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/a4271b46-2434-48d8-b822-fbd254ce810b_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 205,
+      "name": "Digital Glitch Matrix",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-25/dacb191716fc4cf59cf6d6a47bd7f6f1.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/42a7c76b-2663-40ce-8e79-df27e5d0b3b6_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 204,
+      "name": "Glamorous Daily",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729863070853-b627c31f0607cd11e6a34677432b4d8880d321bc-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/0d43b90e-a7b3-43d1-bfa8-2c0613e39682_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 203,
+      "name": "Sophisticated Comfort Themes",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729863056018-cc274106305fe5888e95661ff66e176c62185fe8-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/21c30548-c6a5-4281-a62a-fd660db2e4eb_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 202,
+      "name": "Luxury Elegance Showcase",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-25/1729862134993-2f74bac443846ab1d36ae1dd1082e37e57ab85e5-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/2e8fc51f-5da8-48b9-aef8-03cb950159bf_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 187,
+      "name": "Feature Highlight Classic Polka Dots",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-10-17/1729146002148-9a192361271a30b06c125897bc2d128c3fea44b0-cover.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-11-27/a6ec16e6-6920-4e4d-bc43-923a9310a28f_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 564,
+      "name": "Electronic products",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/99415fab4cd6478bab4cbcd5e5f8d1d4.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/f5756e2b-710f-485c-9fcb-9fc25ed7a422_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 563,
+      "name": "Household small appliances",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/785988c4e4fb46888aea161395382152.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/e2b0e149-02ec-40a1-b516-274c3de625ba_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 562,
+      "name": "Household small appliances",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/23928dd2232f4807a105a5cfd66276d9.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/626eccd3-507f-48b4-bfb5-0309ac214d1f_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 561,
+      "name": "Family entertainment time",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/ebe891f908174e93823e7962f7e3da44.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/780b9266-76a1-462a-a320-017823b5575a_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 560,
+      "name": "Life sharing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/d993cb30f07c4a6d857a35ff4b3d0df0.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/7662a3de-027c-403f-8fd5-88cbb0c6f387_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 557,
+      "name": "Games or Tech",
+      "cover_url": "https://res.jogg.ai/upload/sam/2025-01-17/cc77647d4944428f8c5f8d224a4066d8.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-17/bca7abdd-7ee9-4add-b336-297b58ca6dcc_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 521,
+      "name": "New Year's hot-selling",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-31/e10838b79af44230bf014ddce04ea8cf.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2024-12-31/58f0dcc9-7148-4b32-b563-301ba4799bd3_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 520,
+      "name": "New Year's Party",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-30/811ccb5f786d42cfaeef9d7eefc49b24.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/aac1f8be-8c80-4e32-87b2-54f1ee84cb29_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 519,
+      "name": "New Year's gift",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-31/48411c8fab9b454884a5335633aedb30.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/24094b80-7695-4f30-9cc4-7dd900421f17_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 429,
+      "name": "Christmas Gifts",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-31/1374e0c81e584660905b920b815dc7f1.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/387ce2d3-a2b6-4f07-bc53-33412c0beb2c_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 428,
+      "name": "White Christmas",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-31/1fdfe8c5ebc84df4a2f2b5363e4d65fc.png",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/5340e1bf-d17a-4df1-9336-4dbfeed1a805_720.mp4",
+      "aspect_ratio": 0
+    },
+    {
+      "id": 427,
+      "name": "Christmas Essentials",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-13/8fe923f6897745b1aec0199cdf245f22.jpg",
+      "preview_url": "https://res.jogg.ai/jogg/res/person/2025-01-20/7027136d-c753-4075-a7f6-63ccb4dd6697_720.mp4",
+      "aspect_ratio": 0
+    }
+  ]
+}

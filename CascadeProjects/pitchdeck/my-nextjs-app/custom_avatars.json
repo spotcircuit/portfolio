@@ -1,0 +1,27 @@
+{
+  "rid": "7e6ff75493e487c27cc18cfe110f2a8a",
+  "code": 0,
+  "msg": "success",
+  "data": {
+    "avatars": [
+      {
+        "avatar_id": 115207,
+        "name": "Brian Pyatt",
+        "cover_url": "https://res.jogg.ai/jogg/res/person/2025-02-02/202860ca-b5aa-4a48-a02e-336e8f67f693.jpg",
+        "status": 0
+      },
+      {
+        "avatar_id": 114934,
+        "name": "Brian Pyatt",
+        "cover_url": "https://res.jogg.ai/jogg/res/person/2025-02-02/f99ced4f-862e-40a0-9731-2bb6164c7718.jpg",
+        "status": 1
+      },
+      {
+        "avatar_id": 113443,
+        "name": "Brian Pyatt",
+        "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-30/873075b2-07b0-46e6-b7d0-8aaa427faa4b.jpg",
+        "status": 1
+      }
+    ]
+  }
+}

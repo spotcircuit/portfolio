@@ -1,0 +1,16 @@
+{
+  "voices": [
+    {
+      "name": "Brian Pyatt",
+      "voice_id": "tb_713b5f8c78e84c3ebb812651db6d2a6d",
+      "audio_url": "https://res.jogg.ai/joggUserData/project/113420_sayhello1738184536/tts/d659ccd45ca448a57edb26f7565169b0.mp3",
+      "language": ""
+    },
+    {
+      "name": "Brian Pyatt",
+      "voice_id": "tb_9a6a7a13a72d4cd1b83c0f996243d8ae",
+      "audio_url": "https://res.jogg.ai/joggUserData/project/113443_sayhello1738193493/tts/6d60ed41cacf0575802f27744a01db85.mp3",
+      "language": ""
+    }
+  ]
+}

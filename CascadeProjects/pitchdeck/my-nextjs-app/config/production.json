@@ -1,0 +1,6 @@
+{
+  "environment": "production",
+  "paths": {
+    "base_dir": "/app"
+  }
+}

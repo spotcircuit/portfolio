@@ -1,0 +1,12 @@
+{
+  "default": "Stakeholders, Executives, Business Leaders, Key Decision Makers, Corporate Leadership, Strategic Partners, Board Members, Senior Management, Business Owners",
+  "ceo": "CEO, Chief Executive Officer, Founder, Executive Leadership, Company President, Managing Director, Business Owner, Entrepreneur, Executive Chairman",
+  "cto": "CTO, Chief Technology Officer, Technical Leadership, Engineering Director, Head of Technology, VP Engineering, Technical Architect, Innovation Leader",
+  "coo": "COO, Chief Operations Officer, Operations Leadership, Business Operations, Head of Operations, Operating Executive, Process Innovation Leader",
+  "cfo": "CFO, Chief Financial Officer, Financial Leadership, Investment Decision Maker, Finance Director, Treasury Head, Controller, Investment Strategy Lead",
+  "vp_sales": "VP of Sales, Sales Leadership, Revenue Officer, Head of Business Development, Sales Director, Growth Executive, Commercial Leadership",
+  "vp_marketing": "VP of Marketing, Marketing Leadership, Brand Officer, Chief Marketing Officer, Marketing Director, Brand Strategy Lead, Growth Marketing Head",
+  "director": "Director, Senior Manager, Department Head, Business Unit Leader, Division Manager, Program Director, Strategic Initiative Lead, Team Leadership",
+  "investor": "Investor, Board Member, Stakeholder, Venture Partner, Angel Investor, Investment Committee, Capital Partner, Private Equity, Investment Director",
+  "decision_maker": "Key Decision Maker, Business Leader, Corporate Executive, Strategic Decision Maker, Authority Holder, Executive Decision Maker, Leadership"
+}

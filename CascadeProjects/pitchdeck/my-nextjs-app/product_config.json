@@ -1,0 +1,13 @@
+{
+    "name": "Ryse SmartBridge",
+    "description": "The Ryse SmartBridge is a cutting-edge home automation device that provides seamless control over your smart home ecosystem. Perfect for tech-savvy homeowners looking to enhance their living space with intelligent automation.",
+    "target_audience": "Tech-savvy homeowners and smart home enthusiasts who value convenience, innovation, and seamless integration in their home automation solutions.",
+    "media": [
+        {
+            "type": 1,
+            "name": "smartbridge.jpg",
+            "url": "https://www.helloryse.com/images/smartbridge.jpg",
+            "description": "The sleek and modern Ryse SmartBridge device, showcasing its compact design and easy integration capabilities."
+        }
+    ]
+}

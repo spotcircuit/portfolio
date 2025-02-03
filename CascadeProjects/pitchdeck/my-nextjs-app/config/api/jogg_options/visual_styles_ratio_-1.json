@@ -1,0 +1,124 @@
+{
+  "visual_styles": [
+    {
+      "id": 185,
+      "name": "Showcasing Products"
+    },
+    {
+      "id": 188,
+      "name": "Full Screen(New)"
+    },
+    {
+      "id": 191,
+      "name": "Avatar Bubble"
+    },
+    {
+      "id": 193,
+      "name": "Floating Avatar Voiceover"
+    },
+    {
+      "id": 194,
+      "name": "Inclined Floating Avatar"
+    },
+    {
+      "id": 190,
+      "name": "Up&Down Avatar"
+    },
+    {
+      "id": 192,
+      "name": "Rotary Switch"
+    },
+    {
+      "id": 195,
+      "name": "Floating Avatar"
+    },
+    {
+      "id": 187,
+      "name": "UGC Content"
+    },
+    {
+      "id": 134,
+      "name": "Floating Avatar Voiceover"
+    },
+    {
+      "id": 137,
+      "name": "Simple Product Switch1"
+    },
+    {
+      "id": 119,
+      "name": "FullScreen"
+    },
+    {
+      "id": 150,
+      "name": "Simple Product Switch2"
+    },
+    {
+      "id": 139,
+      "name": "Avatar Bubble"
+    },
+    {
+      "id": 152,
+      "name": "Full Screen"
+    },
+    {
+      "id": 151,
+      "name": "Right&Left Avatar"
+    },
+    {
+      "id": 147,
+      "name": "Simple Product Switch"
+    },
+    {
+      "id": 161,
+      "name": "Video Mixing Featuring Avatars"
+    },
+    {
+      "id": 135,
+      "name": "Floationg Avatar"
+    },
+    {
+      "id": 175,
+      "name": "Avatar in Video Mixing"
+    },
+    {
+      "id": 176,
+      "name": "Video Mixing"
+    },
+    {
+      "id": 164,
+      "name": "Avatars in All Scenes"
+    },
+    {
+      "id": 165,
+      "name": "Dual-Screen Avatar View"
+    },
+    {
+      "id": 177,
+      "name": "Centered Avatar Display"
+    },
+    {
+      "id": 145,
+      "name": "Inclined Floating Avatar"
+    },
+    {
+      "id": 167,
+      "name": "Video Mixing with Standard Dimensions"
+    },
+    {
+      "id": 174,
+      "name": "Showcasing Products"
+    },
+    {
+      "id": 173,
+      "name": "No Gaussian blur"
+    },
+    {
+      "id": 172,
+      "name": "No Gaussian blur"
+    },
+    {
+      "id": 171,
+      "name": "No Gaussian blur"
+    }
+  ]
+}

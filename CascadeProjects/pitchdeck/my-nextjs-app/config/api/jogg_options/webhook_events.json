@@ -1,0 +1,6 @@
+{
+  "events": [
+    "generated_video_success",
+    "generated_video_failed"
+  ]
+}

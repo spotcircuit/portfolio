@@ -1,0 +1,940 @@
+{
+  "avatars": [
+    {
+      "avatar_id": 372,
+      "name": "Emily's Christmas Morning",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-12/7e3675fa-f30c-4d59-893c-fe0d0e047025.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 376,
+      "name": "Jamal's Merry Moments",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-12/64717fcd-aab2-445a-b137-ea55da9c1b3f.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 367,
+      "name": "Sofia's Christmas Magic",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-11/e08f2dec-12a4-44af-a2ab-359db2e73424.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 369,
+      "name": "Zoue's Christmas Magic",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-11/aea6c7e3-8ebe-46d1-815a-e2ae555307ec.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 425,
+      "name": "Hazel",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-13/27e9e1df-389d-48cb-9329-0024f58a6821.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 424,
+      "name": "Victoria",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-13/43476c69-4493-44e2-95e8-89eccf99c08c.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 422,
+      "name": "Evelyn",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-13/3d5bc334-7eb9-4567-8c10-3254690886ac.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 421,
+      "name": "Richard",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-13/81c4e2a9-e05c-43ec-a9a3-a37d3bc15075.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 420,
+      "name": "Fitness Coach Edward",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/b843f06e-46d1-4e2b-9287-cc78babb04c6.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 419,
+      "name": "Dentist Kevin",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-10/8e03b801-efb0-4911-8330-137ccb988b02.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 413,
+      "name": "Andrew-Agent",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/bac69fb4-1fb0-4abe-aeaa-9e37bdba4167.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 411,
+      "name": "Matthew's suit look",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/7eabbe29-c1bb-4e30-8561-3bcf54097bc5.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 412,
+      "name": "Timothy Salesperson",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/be1d6b25-4019-4647-9e6c-41bbc4c14950.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 410,
+      "name": "Stella - Kitchen",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-06/b53dc1f8-f987-4465-a254-dc8026f5090a.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 405,
+      "name": "Audrey Office at night",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-25/ceec7264-befb-4479-8c88-e0ac667a4d9f.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 401,
+      "name": "Amina City ",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-25/a2264cc0-93b7-46e4-aa4c-d4816a91f83c.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 397,
+      "name": "Grace in the kitchen",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-24/ebb97a7a-83e9-48d9-8154-97af838494fd.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 417,
+      "name": "Aurora-Candy Room",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/9d2d5aff-1a8b-45e0-a01c-b585f68a18e5.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 398,
+      "name": "Benjamin Tech Blogger",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-24/36b7efd6-bf9c-4a74-ae9e-bdcd866179da.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 416,
+      "name": "Avery",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/3315b1df-1cd0-4776-8b50-f84a5dce044c.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 406,
+      "name": "Mr. Williams",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-25/6c1ddb9a-4227-47dd-8495-386dec113ba3.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 415,
+      "name": "Penelope-Waitress",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/7fe8d2e8-028a-40ca-b4a8-abca1506ee55.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 414,
+      "name": "Harper-snow day",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-08/4dd64684-174d-4806-8f6d-b21e16aea435.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 404,
+      "name": "Jasmine office",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-25/e15110c0-d3fb-47df-8507-e1eda2993625.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 355,
+      "name": "Kenji's Tech Vibe",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/b98ecc3d-65bc-4f4c-ad08-6fcac7df6b78.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 365,
+      "name": "Lucy's Sweet Escape",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/7a826003-8df2-457d-97f0-ef4334ac2dfc.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 403,
+      "name": "Sonia City night",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-25/07e8ccf3-44e7-4166-bca0-da58d2263d6e.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 402,
+      "name": "Chanju Choi",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-25/43dcd908-7577-41d0-aaf8-3e093f51970d.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 347,
+      "name": "Jing's Cozy Corner",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-25/01ff3fbdeb1c4ea9a0ffbb6e9a1208c0.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 351,
+      "name": "Ethan's Tech Haven",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/985f3c96-2aa1-4aba-8558-a9ee9d169f20.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 357,
+      "name": "Jun's Tech Adventure",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/021384c7-42b8-4295-a130-10ec2e3b35c4.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 360,
+      "name": "Alex's Digital Domain",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/b4336046-eb71-47de-b451-e1805f905217.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 338,
+      "name": "Alexander's Empire",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/812032d7-c806-4739-87d6-ac402baa1afe.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 312,
+      "name": "Amina's Bedroom Corner",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/7a48a88a-85e9-4cc8-845d-cc19f568196e.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 335,
+      "name": "Astrid's Nordic Nook",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/ae2eae9f-fb29-438c-a464-098b6badce1f.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 334,
+      "name": "Camille in the Kitchen",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/731f0969-2cd0-4c06-84eb-36b4da31005f.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 319,
+      "name": "Camille's Insightful Interview",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-31/22d903dd5fc84b5da739cb3ae55b0a0b.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 346,
+      "name": "Col's Denim Flair",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/8ab5a062-b8df-4690-a725-6c796fd90258.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 322,
+      "name": "Darius's Shoe Showcase",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/7734228f-082a-4249-9134-33966ff8004f.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 326,
+      "name": "Emily's Shoe Showcase",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/c6f596cf-709b-4bfd-a384-34824bd4196c.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 349,
+      "name": "Ethan's Urban Look",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/cdf5c64a-4c32-4ac2-9dc9-64908350f9d4.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 337,
+      "name": "Helen's Wisdom Corner",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/f8188041-b05a-4605-8f73-a0053602c9dc.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 321,
+      "name": "Jack's Reading Nook",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/d86aa819-c3a7-46d7-ac27-49a54df3a565.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 354,
+      "name": "Jasper's Digital Edge",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/9aacbece-5759-4126-bb22-3b018d43394d.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 345,
+      "name": "Jian's Outdoor Adventure",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/decaae23-26dd-46c6-86c2-81710028d26b.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 332,
+      "name": "Jinsoo with His Hat",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/3d6a2740-bac1-4ca1-8b64-c27c70c91a44.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 362,
+      "name": "Kai's Sneaker Showcase",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/d6f06dd0-bc5f-4dda-abc9-87492d6d0b45.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 350,
+      "name": "Kai's Tech Hub",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/0834b858-282a-4edf-870b-5bbb0556f45e.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 311,
+      "name": "Keli's Cozy Sanctuary",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/f1fd1553-0c38-46a0-9fbb-7b47c5b46429.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 361,
+      "name": "Kenji's Tech Hub",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/bea31cf7-a15b-4a52-a342-a0aa4a844ad3.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 330,
+      "name": "Kofi's Relaxing",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/28b62497-0907-4174-9c76-c399daaba7c0.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 366,
+      "name": "Lian's Chinese Kitchen",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/655ba249-2bbc-4c7b-8272-5c9ab415d65e.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 318,
+      "name": "Lily's Cozy Retreat",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/4b7adcc3-3b02-47c8-b784-9045f957c6c0.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 340,
+      "name": "Lina's Gentle Grace",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/cfda7850-359e-4f16-a4f0-c83684975d32.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 339,
+      "name": "Malik's Auto Insights",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/1d4a15ab-bda6-4cbd-bccc-f5e7b9787132.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 327,
+      "name": "Malik's Shoe Showcase",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/03a14bd1-199b-4219-b5f1-a42a9ddb3e76.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 343,
+      "name": "Mei's Kitchen Magic",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-25/e6862f8750d94144a4076e92481d67f6.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 356,
+      "name": "Meij's Office Glam",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-12-25/0089f06f155a48908b0a4d9ad34dee59.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 329,
+      "name": "Minji in the Living Room",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/1fcba850-222a-4292-8264-7f05bc1674ad.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 342,
+      "name": "Nan's Workout Session",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/a1ffad74-e279-432f-aa11-d805c588b342.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 328,
+      "name": "Nia's Fashion Fitting",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/ee2aaa93-0ccb-4304-a79b-b863b8cb756a.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 313,
+      "name": "Nina's Cozy Corner",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/06bd9419-df40-405d-8ec4-59c2668b2e48.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 315,
+      "name": "Nyah in the Study",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/751e80b8-8137-4a1f-8867-852cf2eed53e.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 331,
+      "name": "Sofia's Stylish Lounge",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/67b11903-4979-46f0-a441-17297aa0a226.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 324,
+      "name": "Vivian's Insightful Interview",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/dab5b74f-c539-46e4-8b11-b6e9a06f14d2.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 359,
+      "name": "Wei's Gaming Session",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/4250aa89-b49f-4946-93f2-734008cf33db.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 363,
+      "name": "Zayn's Relaxing Space",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/7e8b00c7-04c1-448d-bfb9-f6f4bc3a022b.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 353,
+      "name": "Ze's Tech Haven",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/e345b588-10b1-42e3-8075-5efa449439f8.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 348,
+      "name": "Zuri's Cozy Home",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2024-12-06/aba9dfb1-3fb6-40e8-ab49-6576b66e89e4.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 276,
+      "name": "Jordan Lifts",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-22/33ecd3256d6848ce83c9f354eaf31ef0.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 268,
+      "name": "Zuri Lounge",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/435b1c150e38490f94b6f5052b18f49c.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 267,
+      "name": "Zuri Living Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/8e42687395ef4e13a2eff76c4faa089e.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 275,
+      "name": "Zara Studio",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/5ad4590f1eb74a37ae285a08aba2dc5d.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 274,
+      "name": "Ama Office",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/4cd55f92f7b84f8ba826a7126226ff63.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 272,
+      "name": "Jabari Study",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/35c9a4a234b247bab8533a6846c5e829.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 269,
+      "name": "Kofi Study",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/063eaf8b969b45c69366f628715fcc41.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 273,
+      "name": "Henri Study",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-15/d3702a5ba8ae42478f8520ed1733c4b7.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 265,
+      "name": "Étienne at Work",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/3744104cfa0448acbb52cf3c0d234d03.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 264,
+      "name": "Jamal Reading",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/c0fbe4412a5840e18f61219425f62b76.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 263,
+      "name": "Afu Relaxing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/7aaffb4ed9774484992df90a89db2032.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 262,
+      "name": "Arun Playing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/1d24f463d0b748a188746c9a30665d98.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 261,
+      "name": "Lars Creating",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/b1fb31059f8c4b8497efcaba00e9f429.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 260,
+      "name": "Kai Playing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/2c6fd2cd7c15498e82936322dcb750bb.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 258,
+      "name": "Colette Reading",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/67a51c84d64847048cf494570902a4de.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 257,
+      "name": "Lila Relaxing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/f3bd37b1035747fd9c623f978a4df500.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 256,
+      "name": "Aisyah Relaxing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-05/5dfbba181eb64405a66a08c317ad2926.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 254,
+      "name": "Lakshmi Relaxing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-04/8beb0b9071a74624ab3f2e34b95bb620.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 253,
+      "name": "Meera Journaling",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-04/81ee3c6697604535ba6a97ad25ad3491.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 252,
+      "name": "Ananya Relaxing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-04/0460db41afdc4f73a362f80f1cb338fe.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 251,
+      "name": "Priya Relaxing",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-04/3f4b1502ba7b4fce952839f78e0796e5.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 250,
+      "name": "Ravi Reading",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-11-04/c5b6a5bcef7a479eb912a70532df4901.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 242,
+      "name": "Jamal Coding",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/3d8d682c118a40b5883656ce09fb55c9.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 247,
+      "name": "Layla Working",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/95c1ee089eff46cfba6e8ce7ecca6fbc.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 240,
+      "name": "Nia in a Meeting",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-29/6c92cccc1e9345cab037ea1dbb525c94.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 239,
+      "name": "Claire Living Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/bfadcf3fba6a403389ccda9049b383c8.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 244,
+      "name": "Emma Shopping",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/d5ba728b51fb44079f6baf22eec00d64.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 245,
+      "name": "Lina Shopping",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/e769dae30f6f442c80a10aa9906d1d80.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 237,
+      "name": "Luca Shopping",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/1d61b5249b44403896ce56d0d162bf92.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 235,
+      "name": "Dr. Müller in the Hospital",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/a6fdc394603f49e7ada22f9222963efd.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 236,
+      "name": "Dr. Amina in the Hospital",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-10-30/103af0ad5b4d4c2c9cebcdc6c85dd0d7.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 127,
+      "name": "Anna Basketball",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-18/85eeeb9490a24de99fa741453191f619.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 108,
+      "name": "Anna changing room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-11/4c763b681f234a598c8644420c84b458.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 113,
+      "name": "Anna GYM",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-18/49dc383c22564fb5940c499026f19fbc.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 112,
+      "name": "Anna GYM2",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-22/36205b53cbed498d84d0697038d2353c.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 110,
+      "name": "Anna In Car",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-11/e221731c7610451db3c66637835ced19.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 111,
+      "name": "Anna In Car Phone",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-11/56281c7f32d04617a61309d7063f217d.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 107,
+      "name": "Anna On the treadmill",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-18/874ab66380be4c72be12910acb2e57c0.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 109,
+      "name": "Anna Yoga Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-11/ebe6a7d402244215b408f149559685a8.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 52,
+      "name": "Charles Bedrooms",
+      "cover_url": "https://res.jogg.ai/person/063f9ffaebb588625980c80d02b9b15dc57d58c4-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 64,
+      "name": "Charles Black Living Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-05/1acced1df98c425cbebafd8f19aa7514.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 51,
+      "name": "Charles Bright Living Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-14/55930c511013499487d470130d5278f6.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 50,
+      "name": "Charles Coffee Bar",
+      "cover_url": "https://res.jogg.ai/person/4ac1c962363c1c3147aafcff351ae585770097f3-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 49,
+      "name": "Charles Deluxe Living Room",
+      "cover_url": "https://res.jogg.ai/person/8e48e4817fd600a7e5bf8b54d498e8e7eea0cfa9-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 65,
+      "name": "Charles Staircases",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-05/737374b40c2f4b6aba3bfb0cd07ee4d5.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 66,
+      "name": "Charles Yoga",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-05/de49f71ed81047b3b7864a40315860a9.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 55,
+      "name": "Kato Art Parlor",
+      "cover_url": "https://res.jogg.ai/person/26cab03e42bb616a60ca416d3e455d0f36e12779-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 54,
+      "name": "Kato Bedrooms",
+      "cover_url": "https://res.jogg.ai/person/7bfe92d3d285d537ad2a29d37e6560a4c3683d10-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 58,
+      "name": "Kato Bright Living Room",
+      "cover_url": "https://res.jogg.ai/person/5547b8f0d1f4aa2d8580600d0a49086120d7fe78-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 57,
+      "name": "Kato Coffee Bar",
+      "cover_url": "https://res.jogg.ai/person/c932f4e185b8789b24b58f843da66e5ef9808256-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 128,
+      "name": "Kato Deluxe Living Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-08-26/86773478c3074cd5954e44d50fbfb42c.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 48,
+      "name": "Maria Art Restaurant",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-14/be9be3909e124f2d829a6ea9fa22db66.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 47,
+      "name": "Maria Beauty Bedroom",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-14/b40fb198e28b413a90e1184a7728ebfa.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 46,
+      "name": "Maria Black Living Room",
+      "cover_url": "https://res.jogg.ai/person/68c0181a007b069b9a43d615153e214319528f05-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 45,
+      "name": "Maria Cartoon Bedroom",
+      "cover_url": "https://res.jogg.ai/person/e720756739fd23531c6497615d37662b80bdb116-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 44,
+      "name": "Maria Coffee Bar",
+      "cover_url": "https://res.jogg.ai/person/65db651b00f3e3b4856f22ab6f5907bdd39c90a9-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 43,
+      "name": "Maria Gentle Living Room",
+      "cover_url": "https://res.jogg.ai/person/99bdb916ec53ae381f7621f07f670a2926e22ecc-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 41,
+      "name": "Maria Plant Sofa",
+      "cover_url": "https://res.jogg.ai/upload/2024-05-30/d7dd0b655e99384ea549e7b6be91f50803fd6f25-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 60,
+      "name": "Pablo Artist",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-05/dd2bfcfb86cb4dff8d813272c4c66e21.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 61,
+      "name": "Pablo Bedroom",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-05/5c86b3a5ee284bfaa38964c8daae38b9.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 62,
+      "name": "Pablo Black Tshirt",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-05/5ba6122553b543c8bb9ba5cb7b7c70ba.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 63,
+      "name": "Pablo Living Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-06-05/b3930cf67db442f38d33b4b6056eac47.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 53,
+      "name": "Pablo Modern Living Room",
+      "cover_url": "https://res.jogg.ai/person/9242c76223b296d8e0af47070e503d70b8d30581-cover.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 10,
+      "name": "Pablo Restaurant",
+      "cover_url": "https://res.jogg.ai/upload/2024-05-30/7bdfbef920b303dcae22f9cf2237500d.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 42,
+      "name": "Pablo Sporting Moments",
+      "cover_url": "https://res.jogg.ai/person/c4998ce8fd786c1952afd0bea98a943b4f777b41.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 428,
+      "name": "Elowen Cafe",
+      "cover_url": "https://res.jogg.ai/jogg/res/person/2025-01-22/88d5d59a-12f5-4c08-809f-4b3cd2c60fa1.jpg",
+      "status": 0
+    },
+    {
+      "avatar_id": 8,
+      "name": "Henry city boy style",
+      "cover_url": "https://res.jogg.ai/upload/2024-05-30/62021f0f08a8dbca429704f4d53d3ff2.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 5,
+      "name": "Henry in bed",
+      "cover_url": "https://res.jogg.ai/upload/2024-05-30/187a0c8ae38cc82c3e2ff3da7454232a.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 9,
+      "name": "Henry in the kitchen",
+      "cover_url": "https://res.jogg.ai/upload/2024-05-30/a01b6e6227d72ae379adea510fef1c01.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 101,
+      "name": "Nick In Car",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-10/31c23e4e500c4d9a92226acef7f61d7f.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 106,
+      "name": "Nick In Car Phone",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-10/7a42400b8b06467f9de2393b724d0005.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 103,
+      "name": "Nick lawn walkway",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-22/06a65b04ebfe49c1a92e4157f6bdec0b.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 104,
+      "name": "Nick lawn walkway2",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-25/5e767cd3d8c54f7586bd30d8a856577a.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 105,
+      "name": "Nick Outdoor Creekside",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-10/ee087475713b4478a7833f093d5e31e7.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 115,
+      "name": "Paulo Basketball",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-11/d8126f6845cf4071931abe5488c39470.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 114,
+      "name": "Paulo Changing Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-11/6037d5b5e373451c9262031ec3a34345.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 117,
+      "name": "Paulo GYM Phone",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-18/9a89f124f1ff4dd387155dfcf85265d0.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 118,
+      "name": "Paulo GYM Phone2",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-18/a227ca519626465baefd6d175635e97a.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 120,
+      "name": "Paulo GYM2",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-12/7e637f9d874842f9a2880e50a25e9443.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 123,
+      "name": "Paulo Yoga Room",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-12/36aae0915a4b4c8c9e943e8baa700d28.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 96,
+      "name": "Poly In Car",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-10/8d2196b849c84e96a103ba9de0e7aed7.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 95,
+      "name": "Poly In Car Phone",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-10/e18e711bf7414035a994989c5b490428.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 100,
+      "name": "Poly In Tesla",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-10/4c325de1b32c4c359b33b5686795f9e4.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 98,
+      "name": "Poly Outdoor Forest",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-10/333f24ef466943ffa226e7a775903566.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 94,
+      "name": "Poly Outdoor lawn",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-24/3939d921e23041b7ad30d495531f9b8f.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 99,
+      "name": "Poly Outdoor Stone Steps",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-18/4b3d642fe3594e9582817040515c94d5.png",
+      "status": 0
+    },
+    {
+      "avatar_id": 97,
+      "name": "Poly Stone Circle",
+      "cover_url": "https://res.jogg.ai/upload/sam/2024-07-17/8be404dd46cb46bdb9c179aaddfbf5a9.png",
+      "status": 0
+    }
+  ]
+}

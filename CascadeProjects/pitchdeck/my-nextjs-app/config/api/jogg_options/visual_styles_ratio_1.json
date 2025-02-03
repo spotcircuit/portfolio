@@ -1,0 +1,40 @@
+{
+  "visual_styles": [
+    {
+      "id": 134,
+      "name": "Floating Avatar Voiceover"
+    },
+    {
+      "id": 137,
+      "name": "Simple Product Switch1"
+    },
+    {
+      "id": 150,
+      "name": "Simple Product Switch2"
+    },
+    {
+      "id": 139,
+      "name": "Avatar Bubble"
+    },
+    {
+      "id": 152,
+      "name": "Full Screen"
+    },
+    {
+      "id": 151,
+      "name": "Right&Left Avatar"
+    },
+    {
+      "id": 135,
+      "name": "Floationg Avatar"
+    },
+    {
+      "id": 145,
+      "name": "Inclined Floating Avatar"
+    },
+    {
+      "id": 172,
+      "name": "No Gaussian blur"
+    }
+  ]
+}

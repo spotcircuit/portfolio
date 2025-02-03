@@ -1,0 +1,22 @@
+{
+  "avatars": {
+    "brian_1": {
+      "id": "115207",
+      "name": "Brian Pyatt",
+      "description": "Brian Pyatt Avatar 1",
+      "status": 1
+    },
+    "brian_2": {
+      "id": "114934",
+      "name": "Brian Pyatt",
+      "description": "Brian Pyatt Avatar 2",
+      "status": 1
+    },
+    "brian_3": {
+      "id": "113443",
+      "name": "Brian Pyatt",
+      "description": "Brian Pyatt Avatar 3",
+      "status": 1
+    }
+  }
+}

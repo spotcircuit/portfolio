@@ -1,0 +1,44 @@
+{
+  "visual_styles": [
+    {
+      "id": 185,
+      "name": "Showcasing Products"
+    },
+    {
+      "id": 161,
+      "name": "Video Mixing Featuring Avatars"
+    },
+    {
+      "id": 175,
+      "name": "Avatar in Video Mixing"
+    },
+    {
+      "id": 176,
+      "name": "Video Mixing"
+    },
+    {
+      "id": 164,
+      "name": "Avatars in All Scenes"
+    },
+    {
+      "id": 165,
+      "name": "Dual-Screen Avatar View"
+    },
+    {
+      "id": 177,
+      "name": "Centered Avatar Display"
+    },
+    {
+      "id": 167,
+      "name": "Video Mixing with Standard Dimensions"
+    },
+    {
+      "id": 174,
+      "name": "Showcasing Products"
+    },
+    {
+      "id": 173,
+      "name": "No Gaussian blur"
+    }
+  ]
+}

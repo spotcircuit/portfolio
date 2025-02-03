@@ -1,0 +1,508 @@
+{
+  "background_music": [
+    {
+      "id": 36,
+      "name": "Whispers of the Night",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/6f1011c2fa514ca49f8ab0eb665a5f22.mp3",
+      "duration": 56
+    },
+    {
+      "id": 73,
+      "name": "Fiesta Fever Beats",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/b88b74842848448cabdfea8b15375669.mp3",
+      "duration": 67
+    },
+    {
+      "id": 54,
+      "name": "Joyful Beat Bliss",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/e27a4ad4e64a48739397b5013df24632.mp3",
+      "duration": 51
+    },
+    {
+      "id": 88,
+      "name": "Sparkling Beats",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/a487007bad6c4b14a46b5a96d74f142f.mp3",
+      "duration": 78
+    },
+    {
+      "id": 106,
+      "name": "Night Champagne",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/523fcec40c5e470ba5a0e94e75e2ff4c.mp3",
+      "duration": 89
+    },
+    {
+      "id": 109,
+      "name": "Upbeat Whistle Rhythm",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/e02638ceb11b4c4097d61f0e17706587.mp3",
+      "duration": 101
+    },
+    {
+      "id": 107,
+      "name": "Soft Embrace",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/e8e139182be441259dc8a450271eb642.mp3",
+      "duration": 114
+    },
+    {
+      "id": 66,
+      "name": "When the Woods Whisper",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/fb6696602b3b4a3390c59e9b124d9de5.mp3",
+      "duration": 143
+    },
+    {
+      "id": 50,
+      "name": "Chill Upbeat Rhythm",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/19cf74a807734dc0bc3db35c21697812.mp3",
+      "duration": 108
+    },
+    {
+      "id": 101,
+      "name": "Enigmatic Reverie",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/48c8caf0197e4ebe954937451a319acb.mp3",
+      "duration": 100
+    },
+    {
+      "id": 89,
+      "name": "Rio Rhythms",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/9fa3375c2f584059bb17f7513675bb3d.mp3",
+      "duration": 73
+    },
+    {
+      "id": 60,
+      "name": "Soulful Blues Horizon",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/6104b54a791a463a98415c6cebbbd9ee.mp3",
+      "duration": 115
+    },
+    {
+      "id": 59,
+      "name": "Riding on a sunny highway",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/951f3feb9ab748378f33d7576f7dfc7f.mp3",
+      "duration": 64
+    },
+    {
+      "id": 108,
+      "name": "Upbeat Ukulele Jazz",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/559f4380639c4e879d3db14b75fb1c14.mp3",
+      "duration": 147
+    },
+    {
+      "id": 76,
+      "name": "Running on the Rainbow",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/d63ddfc157474f1ea45dddd299b4e6e0.mp3",
+      "duration": 109
+    },
+    {
+      "id": 90,
+      "name": "Folk Frolic",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/b23e503f950549cd8e4345b59caeddf8.mp3",
+      "duration": 84
+    },
+    {
+      "id": 91,
+      "name": "Neon Beatwave",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/a688dd3e9fdc49908631d94be8e1ba00.mp3",
+      "duration": 177
+    },
+    {
+      "id": 92,
+      "name": "Rhythmic Run at Sunset",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/af1460c42ea04a68a6bb11b96252e519.mp3",
+      "duration": 56
+    },
+    {
+      "id": 93,
+      "name": "Gentle as the Wind",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/f9a68688eaba496489d69d44e71a6e40.mp3",
+      "duration": 105
+    },
+    {
+      "id": 100,
+      "name": "8-bit Pixelated Dreams",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/13155b088a3a48e7896afdbfe8e78f4f.mp3",
+      "duration": 188
+    },
+    {
+      "id": 105,
+      "name": "Marching On",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/d48d57752360446f90c8d1b902e76107.mp3",
+      "duration": 151
+    },
+    {
+      "id": 94,
+      "name": "Joyful Strings",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/d219eb2c398147f0871a7d23f039a6fc.mp3",
+      "duration": 92
+    },
+    {
+      "id": 103,
+      "name": "Light Rhythm",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/46223db0218f4d1cb79e7fa0ae3abdb3.mp3",
+      "duration": 193
+    },
+    {
+      "id": 104,
+      "name": "Lively Melody",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/f5adb81047a24e9ca5ce5413066caf35.mp3",
+      "duration": 81
+    },
+    {
+      "id": 95,
+      "name": "Rural Rhythms",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/c3f18dfd17a448b79c180b029d12d172.mp3",
+      "duration": 88
+    },
+    {
+      "id": 96,
+      "name": "Sunshine Village",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/5cbaa0aab00c45df927d2c7c8fc70426.mp3",
+      "duration": 132
+    },
+    {
+      "id": 97,
+      "name": "Wave Swirl",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-12/61cc88c2a0b847c6a5025f65877e7010.mp3",
+      "duration": 88
+    },
+    {
+      "id": 55,
+      "name": "PowerPulse Tech Surge",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/cbeb0a40e01842d186de9b2102867708.mp3",
+      "duration": 124
+    },
+    {
+      "id": 80,
+      "name": "Tropical Rhythms of the Marimba",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/f13cd70dc13a443d94f369fcc0282a5a.mp3",
+      "duration": 47
+    },
+    {
+      "id": 58,
+      "name": "Rhythm Revolt",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/6b6364987a2b45df91148a3ca5e5597a.mp3",
+      "duration": 64
+    },
+    {
+      "id": 74,
+      "name": "Galactic Grooves",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/cfa781223500468080d75ecdd95dd4cf.mp3",
+      "duration": 71
+    },
+    {
+      "id": 34,
+      "name": "Stars in the Night",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/9913ced2ef0243ed97591b40d55f8981.mp3",
+      "duration": 98
+    },
+    {
+      "id": 78,
+      "name": "Street Swagger Grooves",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/bba28c304c6f4208a142077857529a7b.mp3",
+      "duration": 119
+    },
+    {
+      "id": 33,
+      "name": "Jumping Fireworks",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/c31ec5909fb4402dbb904e99984fdea4.mp3",
+      "duration": 96
+    },
+    {
+      "id": 62,
+      "name": "Summer Vibes",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/be7ae54661a54d5a91e518212c904d3c.mp3",
+      "duration": 100
+    },
+    {
+      "id": 32,
+      "name": "Jump Into the Sky",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/240da9f35e9a4991a6250b9c914df81f.mp3",
+      "duration": 67
+    },
+    {
+      "id": 81,
+      "name": "Youth Marimba",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/a433521221954240b7b4eb6e15f0bfe4.mp3",
+      "duration": 72
+    },
+    {
+      "id": 52,
+      "name": "Electro-Latin Fusion",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/551ab08b88794e219dfa8121913fe6b4.mp3",
+      "duration": 64
+    },
+    {
+      "id": 79,
+      "name": "Swing Night Serenade",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/ae472f207d094463b1ba1939fd9f64e6.mp3",
+      "duration": 130
+    },
+    {
+      "id": 63,
+      "name": "Sunshine Strumming",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/68b3b343ce924f4b945a25e3feb148be.mp3",
+      "duration": 115
+    },
+    {
+      "id": 31,
+      "name": "Electric Heart",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/e9fe4f9dab0946738f6edbf4f379ff2d.mp3",
+      "duration": 157
+    },
+    {
+      "id": 30,
+      "name": "Echoes in the Dark",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/9d161969be5742bba74028db4e336c06.mp3",
+      "duration": 94
+    },
+    {
+      "id": 69,
+      "name": "Casual Swing Groove",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/9491b721260342c1a2a17c8fb16ce965.mp3",
+      "duration": 82
+    },
+    {
+      "id": 29,
+      "name": "Dancing in the Lights",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/7339a568e63849118a24248423d8c842.mp3",
+      "duration": 112
+    },
+    {
+      "id": 71,
+      "name": "Dancing Raindrops",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/7104c97fa61043209d93147874c0aba4.mp3",
+      "duration": 68
+    },
+    {
+      "id": 68,
+      "name": "Accordion Rush Beat",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/6dd69e64a6404c9f93d9251a948023ac.mp3",
+      "duration": 99
+    },
+    {
+      "id": 28,
+      "name": "Dancin' with Destiny",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/3ee28d2dbdc24754a719d827f69d3682.mp3",
+      "duration": 137
+    },
+    {
+      "id": 35,
+      "name": "Swinging Circuits",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/23d344a38aae4123b1de5bbcf998326a.mp3",
+      "duration": 106
+    },
+    {
+      "id": 27,
+      "name": "Breaking Through the Sky",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-16/1ce6a0f9817d488283867d4a9a43da98.mp3",
+      "duration": 94
+    },
+    {
+      "id": 37,
+      "name": "A kid's lollipop",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/3bc01c28311644a5847d21fcf61af227.mp3",
+      "duration": 86
+    },
+    {
+      "id": 53,
+      "name": "Energetic Circuit Sprint",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/cd6ee32ed8be4c2983be809c30ecaf44.mp3",
+      "duration": 240
+    },
+    {
+      "id": 64,
+      "name": "Unbound Serenity",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/6e40f5301b3c4c1584f374150197d645.mp3",
+      "duration": 64
+    },
+    {
+      "id": 57,
+      "name": "Pulse Fusion Mix",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/98104133f3cd4794a05fab1e9993e24a.mp3",
+      "duration": 129
+    },
+    {
+      "id": 72,
+      "name": "Feel the Rhythm",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/e1bb233550df4ca39b206bf001f349f7.mp3",
+      "duration": 158
+    },
+    {
+      "id": 61,
+      "name": "Street Serenade",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/de08dbc9fe8344ad965f2bdf6890dfa2.mp3",
+      "duration": 98
+    },
+    {
+      "id": 46,
+      "name": "Whispers of the sunset",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/ea14920512ac4a63987c3f4c45a8a9cc.mp3",
+      "duration": 124
+    },
+    {
+      "id": 38,
+      "name": "Have some beer",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/e6586d8cc6d04ef4a80717d7d13d6d81.mp3",
+      "duration": 71
+    },
+    {
+      "id": 49,
+      "name": "Bluesy Urban Delight",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/6cbdc370ffea4b0f8ea36f9f28efece1.mp3",
+      "duration": 157
+    },
+    {
+      "id": 51,
+      "name": "Easygoing Country Vibe",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/885e4057e45140429d3a704d873fea58.mp3",
+      "duration": 107
+    },
+    {
+      "id": 56,
+      "name": "Pulse Energy",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/31637ac268994852b0b07313da2392b1.mp3",
+      "duration": 174
+    },
+    {
+      "id": 41,
+      "name": "Leisurely and relaxed",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/e234fa92faff40feb8055e711430214e.mp3",
+      "duration": 107
+    },
+    {
+      "id": 43,
+      "name": "Summer Night",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/4d571a2c88a5490daaa6af4a7a45a949.mp3",
+      "duration": 98
+    },
+    {
+      "id": 42,
+      "name": "Starlight forever",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/dad90926831a41758a12e05c62d57692.mp3",
+      "duration": 123
+    },
+    {
+      "id": 77,
+      "name": "Starry Wilderness",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/41f6179a5a6743ac861eac1c7ae2dc94.mp3",
+      "duration": 76
+    },
+    {
+      "id": 44,
+      "name": "Sunset on the Beach",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/aff8af009baf4b8e8ed618344aa01a63.mp3",
+      "duration": 63
+    },
+    {
+      "id": 65,
+      "name": "Urban Hustle Anthem",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/becab644ff364798a4c9d5ad223b2880.mp3",
+      "duration": 81
+    },
+    {
+      "id": 45,
+      "name": "Wanderlust Pulse",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/f775f049d48e413482a3461ce1e069cc.mp3",
+      "duration": 96
+    },
+    {
+      "id": 47,
+      "name": "Wind and dream",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/afe1ab9b85034b969159e5d4053710a5.mp3",
+      "duration": 104
+    },
+    {
+      "id": 67,
+      "name": "Whimsical Kiddie Tune",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/3dfcd933da2b4ec49ae7ac80f7a0d9ef.mp3",
+      "duration": 124
+    },
+    {
+      "id": 102,
+      "name": "KID-Teddy Bear Dance Party",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-27/9cbddb6fa2a14dc6b2e5f5adfd9074a8.mp3",
+      "duration": 91
+    },
+    {
+      "id": 39,
+      "name": "Hi little puppy",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/3345c6900d2a4ce0b7c698f997af7ff0.mp3",
+      "duration": 117
+    },
+    {
+      "id": 40,
+      "name": "Hip-hop all the time",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-23/db2d102275994c07ade7c6c94c439244.mp3",
+      "duration": 94
+    },
+    {
+      "id": 48,
+      "name": "Blissful Blues Groove",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-10-29/0c7ef3659da84d38a2c79e436a084e71.mp3",
+      "duration": 156
+    },
+    {
+      "id": 70,
+      "name": "Dancing In The Moonlight",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/8c50477e38e64fd4aa66f5c246ec1b35.mp3",
+      "duration": 125
+    },
+    {
+      "id": 75,
+      "name": "Playtime Melodies",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-11-18/f4ee09880783437d9d753f7949eb8797.mp3",
+      "duration": 78
+    },
+    {
+      "id": 84,
+      "name": "🎄Christmas Dreamscape Melody",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-11/20566d4ce4de4274b6ca86b0ca3f8c1a.mp3",
+      "duration": 102
+    },
+    {
+      "id": 83,
+      "name": "🎄Christmas bells",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-11/9d662bda06544fa7b92b2a457808110b.mp3",
+      "duration": 62
+    },
+    {
+      "id": 23,
+      "name": "🎃Bewitched Ballad",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-09-27/e0b7e35904354e208390c35d27b1a866.mp3",
+      "duration": 85
+    },
+    {
+      "id": 99,
+      "name": "🎄This is Christmas!",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-18/3bd88138ba3248409309a0cb49c2d557.mp3",
+      "duration": 94
+    },
+    {
+      "id": 98,
+      "name": "🎄Merry Christmas beat!",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-18/855357c8acf84167b2888464ff00fc0f.mp3",
+      "duration": 112
+    },
+    {
+      "id": 85,
+      "name": "🎄Magical Christmas Carols",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-12-11/0d10c3ab486d4b1586cc20292fe6a8fd.mp3",
+      "duration": 109
+    },
+    {
+      "id": 26,
+      "name": "🎃Witching Hour Melodies",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-09-27/186ecaae3e8545578e3ffb001dff0d66.mp3",
+      "duration": 99
+    },
+    {
+      "id": 25,
+      "name": "🎃Pumpkin Patch Lullaby",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-09-27/322a34974c4542ff92c87a3578e89cda.mp3",
+      "duration": 74
+    },
+    {
+      "id": 24,
+      "name": "🎃Ghostly Serenade",
+      "music_url": "https://res.jogg.ai/upload/sam/2024-09-27/d99407e5974f467cbc4407fba3234288.mp3",
+      "duration": 83
+    }
+  ]
+}
