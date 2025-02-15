@@ -18,6 +18,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark')
+              } else {
+                document.documentElement.classList.remove('dark')
+              }
+            `,
+          }}
+        />
+      </head>
       <body className={`${inter.className} bg-gray-50 dark:bg-gray-900`}>
         <Header />
         <main className="min-h-screen">

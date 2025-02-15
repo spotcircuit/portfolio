@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { 
-  FaArrowRight, FaSearchDollar, FaChartLine, FaMapMarkerAlt, 
+  FaSearchDollar, FaChartLine, FaMapMarkerAlt, 
   FaCode, FaCloud, FaMicrosoft, FaWindows, FaJava, FaHashtag
 } from 'react-icons/fa';
 import { TbSeo, TbChartBar } from 'react-icons/tb';
@@ -160,10 +160,10 @@ const categories = [
   }
 ];
 
-export default function Hero() {
-  const [activeTab, setActiveTab] = useState('expert');
+export default function Hero(): JSX.Element {
+  const [activeTab, setActiveTab] = useState<'expert' | 'services' | 'projects'>('expert');
 
-  const codeContent = {
+  const codeContent: Record<'expert' | 'services' | 'projects', string> = {
     expert: `interface DigitalExpert {
   name: string;
   role: string;
@@ -198,41 +198,20 @@ const expert: DigitalExpert = {
     platforms: string[];
     optimization: string[];
   };
-  ai: string[];
-}
-
-const services: Services = {
-  seo: {
-    technical: ['Core Web Vitals', 'Schema Markup', 'Site Architecture'],
-    content: ['AEO Strategy', 'Content Strategy', 'AI Integration']
-  },
-  ecommerce: {
-    platforms: ['Shopify', 'BigCommerce', 'Webflow'],
-    optimization: ['CRO & UX', 'Performance', 'Analytics']
-  },
-  ai: ['ChatGPT Integration', 'Custom LLMs', 'Workflow Automation']
+  ai: {
+    integration: string[];
+    automation: string[];
+  };
 }`,
     projects: `interface Project {
   name: string;
-  type: 'ecommerce' | 'ai' | 'deals';
-  tech: string[];
-  features: string[];
-}
-
-const projects: Project[] = [
-  {
-    name: 'SpotCircuit',
-    type: 'ecommerce',
-    tech: ['Next.js', 'Shopify', 'GA4'],
-    features: ['Store Optimization', 'SEO/AEO', 'Analytics']
-  },
-  {
-    name: 'SpotAI',
-    type: 'ai',
-    tech: ['Python', 'LangChain', 'OpenAI'],
-    features: ['Custom LLMs', 'Automation', 'Integration']
-  }
-]`
+  type: 'ecommerce' | 'ai' | 'analytics';
+  technologies: string[];
+  impact: {
+    metrics: string[];
+    results: number[];
+  };
+}`
   };
 
   return (
