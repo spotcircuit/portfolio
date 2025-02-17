@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaYoutube, FaLinkedin, FaInstagram, FaTiktok, FaTwitter, FaPinterest } from 'react-icons/fa';
+import { FaYoutube, FaLinkedin, FaInstagram, FaTiktok, FaTwitter, FaPinterest, FaGithub } from 'react-icons/fa';
 import { SiUpwork } from 'react-icons/si';
 
 interface ProjectSocial {
@@ -24,6 +24,18 @@ interface Project {
 }
 
 const projects: readonly Project[] = [
+  {
+    name: 'BidGenius AI',
+    description: 'Built an AI-powered platform for automating government RFP analysis and response generation. Features include intelligent document processing, requirement extraction, compliance checking, and automated proposal generation. Integrates with SAM.gov and other federal contract databases.',
+    image: '/images/bidgenius.jpg',
+    link: 'https://www.bidgeniusai.com',
+    github: 'https://github.com/spotcircuit/bidgeniusai',
+    tags: ['Next.js', 'TypeScript', 'AI', 'Government Contracts', 'TailwindCSS'] as const,
+    socials: [
+      { platform: 'GitHub', url: 'https://github.com/spotcircuit/bidgeniusai', icon: <FaGithub />, color: 'hover:text-gray-600' },
+      { platform: 'LinkedIn', url: 'https://linkedin.com/in/brianpyatt', icon: <FaLinkedin />, color: 'hover:text-blue-600' }
+    ] as const
+  },
   {
     name: 'Tube2Link',
     description: 'Developed an innovative AI-powered application that transforms YouTube videos into engaging LinkedIn posts. Features include OAuth authentication, automatic caption extraction, AI content generation with length control, and a modern responsive UI. Supports multiple video types and includes real-time previews.',
