@@ -61,32 +61,58 @@ const DrawingTools: FC<DrawingToolsProps> = ({ map, onShapeComplete, drawingMode
   };
 
   const setupShapeListeners = (shape: google.maps.Polygon) => {
-    const updateShape = () => {
-      const path = shape.getPath();
-      if (path.getLength() >= 2) {
-        const start = path.getAt(0);
-        const end = path.getAt(1);
-        updateMeasurements(start, end);
-      }
-    };
-
     shape.setOptions({ 
       draggable: true,
       editable: true 
     });
 
+    const updateShapeMeasurements = () => {
+      console.log('Updating measurements...');
+      const path = shape.getPath();
+      if (path.getLength() >= 2) {
+        const start = path.getAt(0);
+        const end = path.getAt(1);
+        const area = google.maps.geometry.spherical.computeArea(path);
+        const areaInSqFt = Math.round(area * 10.764);
+        const distance = google.maps.geometry.spherical.computeLength(path);
+        const distanceInFt = Math.round(distance * 3.28084);
+        const measurement = { distance: distanceInFt, area: areaInSqFt };
+        console.log('New measurements:', measurement);
+        onMeasurementUpdate(measurement);
+      } else {
+        console.log('Path too short, resetting measurements');
+        onMeasurementUpdate({ distance: null, area: null });
+      }
+    };
+
+    // Initial measurement
+    updateShapeMeasurements();
+
+    // Update measurements during drag
+    let dragTimeout: NodeJS.Timeout;
+    
     shape.addListener('dragstart', () => {
       map?.setOptions({ draggableCursor: 'grabbing' });
     });
 
-    shape.addListener('dragend', () => {
-      map?.setOptions({ draggableCursor: 'grab' });
-      updateShape();
+    shape.addListener('drag', () => {
+      // Debounce the updates during drag
+      if (dragTimeout) clearTimeout(dragTimeout);
+      dragTimeout = setTimeout(updateShapeMeasurements, 50);
     });
 
-    shape.getPath().addListener('set_at', updateShape);
-    shape.getPath().addListener('insert_at', updateShape);
-    shape.getPath().addListener('remove_at', updateShape);
+    shape.addListener('dragend', () => {
+      map?.setOptions({ draggableCursor: 'grab' });
+      // Clear any pending debounced updates
+      if (dragTimeout) clearTimeout(dragTimeout);
+      // Ensure final measurement is updated
+      setTimeout(updateShapeMeasurements, 0);
+    });
+
+    // Update measurements when path changes
+    shape.getPath().addListener('set_at', updateShapeMeasurements);
+    shape.getPath().addListener('insert_at', updateShapeMeasurements);
+    shape.getPath().addListener('remove_at', updateShapeMeasurements);
 
     shape.addListener('mouseover', () => {
       map?.setOptions({ draggableCursor: 'grab' });
