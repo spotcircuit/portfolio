@@ -1,71 +1,49 @@
-import { PencilSquareIcon, ArrowPathIcon, CursorArrowRaysIcon } from '@heroicons/react/24/outline';
+'use client';
 
-const DrawingInstructions = () => {
+import { 
+  PencilSquareIcon as PencilIcon,
+  ArrowsPointingInIcon,
+  ArrowsUpDownIcon,
+  RectangleStackIcon,
+  LightBulbIcon
+} from '@heroicons/react/24/outline';
+
+interface DrawingInstructionsProps {
+  isVisible: boolean;
+}
+
+const DrawingInstructions: React.FC<DrawingInstructionsProps> = ({ isVisible }) => {
+  if (!isVisible) return null;
+  
   return (
-    <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-6 shadow-xl mb-6">
-      <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-        <PencilSquareIcon className="h-6 w-6 mr-2 text-blue-400" />
+    <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg shadow p-6">
+      <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+        <LightBulbIcon className="h-6 w-6 text-blue-500" />
         Drawing Instructions
-      </h3>
-      <div className="space-y-4">
-        <div className="flex items-start space-x-3">
-          <div className="flex-shrink-0">
-            <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <span className="text-blue-400 font-semibold">1</span>
-            </div>
-          </div>
-          <div>
-            <p className="text-gray-200">Click the "Draw Line" button to start drawing</p>
-            <p className="text-gray-400 text-sm mt-1">This will activate the drawing mode</p>
-          </div>
+      </h2>
+      <div className="grid grid-cols-2 gap-4">
+        <div className="space-y-2">
+          <p className="text-gray-700 font-medium flex items-center gap-2">
+            <PencilIcon className="h-5 w-5 text-blue-500" /> 1. Start Drawing
+          </p>
+          <p className="text-gray-600 pl-4">Click the "Draw" button to activate the drawing tool</p>
+          <p className="text-gray-700 font-medium mt-4 flex items-center gap-2">
+            <ArrowsPointingInIcon className="h-5 w-5 text-blue-500" /> 2. Create Your Line
+          </p>
+          <p className="text-gray-600 pl-4">Click once on the map to set your starting point</p>
+          <p className="text-gray-600 pl-4">Click again to set your ending point</p>
         </div>
-
-        <div className="flex items-start space-x-3">
-          <div className="flex-shrink-0">
-            <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <span className="text-blue-400 font-semibold">2</span>
-            </div>
-          </div>
-          <div>
-            <p className="text-gray-200">Click on the map to set your starting point</p>
-            <p className="text-gray-400 text-sm mt-1">Your first click will establish where your line begins</p>
-          </div>
-        </div>
-
-        <div className="flex items-start space-x-3">
-          <div className="flex-shrink-0">
-            <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <span className="text-blue-400 font-semibold">3</span>
-            </div>
-          </div>
-          <div>
-            <p className="text-gray-200">Click again to set your ending point</p>
-            <p className="text-gray-400 text-sm mt-1">This will complete your line and show measurements</p>
-          </div>
-        </div>
-
-        <div className="flex items-start space-x-3">
-          <div className="flex-shrink-0">
-            <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <CursorArrowRaysIcon className="h-5 w-5 text-blue-400" />
-            </div>
-          </div>
-          <div>
-            <p className="text-gray-200">Adjust your line by dragging points</p>
-            <p className="text-gray-400 text-sm mt-1">Click and drag either endpoint to modify your line</p>
-          </div>
-        </div>
-
-        <div className="flex items-start space-x-3">
-          <div className="flex-shrink-0">
-            <div className="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <ArrowPathIcon className="h-5 w-5 text-blue-400" />
-            </div>
-          </div>
-          <div>
-            <p className="text-gray-200">Reset anytime to start over</p>
-            <p className="text-gray-400 text-sm mt-1">Click the reset button to clear your line and start fresh</p>
-          </div>
+        <div className="space-y-2">
+          <p className="text-gray-700 font-medium flex items-center gap-2">
+            <ArrowsUpDownIcon className="h-5 w-5 text-blue-500" /> 3. Adjust Your Line
+          </p>
+          <p className="text-gray-600 pl-4">Drag either endpoint to modify the line length</p>
+          <p className="text-gray-600 pl-4">Drag the middle of the line to move it entirely</p>
+          <p className="text-gray-700 font-medium mt-4 flex items-center gap-2">
+            <RectangleStackIcon className="h-5 w-5 text-blue-500" /> 4. View Measurements
+          </p>
+          <p className="text-gray-600 pl-4">Distance and area measurements update automatically</p>
+          <p className="text-gray-600 pl-4">Use the "Clear" button to start over if needed</p>
         </div>
       </div>
     </div>
