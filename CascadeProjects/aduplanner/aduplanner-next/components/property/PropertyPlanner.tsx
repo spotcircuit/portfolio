@@ -315,16 +315,31 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
           <div className="bg-white rounded-lg shadow p-6">
             <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
               <LightBulbIcon className="h-6 w-6 text-blue-500" />
-              Instructions
+              Drawing Instructions
             </h2>
-            <div className="space-y-3">
-              <p className="text-gray-700">Follow these steps to plan your ADU:</p>
-              <ol className="list-decimal list-inside space-y-2 text-gray-600">
-                <li>Review the property analysis on the right</li>
-                <li>Use the drawing tools to outline your property boundaries</li>
-                <li>Click on the map to place markers for measurements</li>
-                <li>Adjust the ADU placement within the buildable area</li>
-              </ol>
+            <div className="space-y-4">
+              <div className="space-y-2">
+                <p className="text-gray-700 font-medium">1. Start Drawing</p>
+                <p className="text-gray-600 pl-4">Click the "Draw" button to activate the drawing tool</p>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-gray-700 font-medium">2. Create Your Line</p>
+                <p className="text-gray-600 pl-4">Click once on the map to set your starting point</p>
+                <p className="text-gray-600 pl-4">Click again to set your ending point</p>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-gray-700 font-medium">3. Adjust Your Line</p>
+                <p className="text-gray-600 pl-4">Drag either endpoint to modify the line length</p>
+                <p className="text-gray-600 pl-4">Drag the middle of the line to move it entirely</p>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-gray-700 font-medium">4. View Measurements</p>
+                <p className="text-gray-600 pl-4">Distance and area measurements will update automatically</p>
+                <p className="text-gray-600 pl-4">Use the "Clear" button to start over if needed</p>
+              </div>
             </div>
           </div>
         </div>
