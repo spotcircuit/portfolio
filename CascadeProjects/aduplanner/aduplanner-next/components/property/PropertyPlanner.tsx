@@ -20,6 +20,8 @@ import {
 import DrawingTools from '../map/tools/DrawingTools';
 import { analyzePropertyByAddress } from '@/lib/propertyAnalysis';
 import { validateADUPlacement } from '@/lib/visionAnalysis';
+import { captureMapView } from '@/lib/mapCapture';
+import { analyzePropertyImage, PropertyAnalysisResult } from '@/lib/visionAnalysis';
 
 interface PropertyPlannerProps {
   location: google.maps.LatLngLiteral;
@@ -71,8 +73,9 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
     distance: null,
     area: null
   });
-  const [visionAnalysis, setVisionAnalysis] = useState<string | null>(null);
+  const [visionAnalysis, setVisionAnalysis] = useState<PropertyAnalysisResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [analysisError, setAnalysisError] = useState<string | null>(null);
   const [showInfo, setShowInfo] = useState(false);
   const [propertyAnalysis, setPropertyAnalysis] = useState(initialAnalysis);
   const [isDrawingActive, setIsDrawingActive] = useState(false);
@@ -253,6 +256,53 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
       }
     }
   };
+
+  const runVisionAnalysis = async () => {
+    if (!map || !propertyBoundary) return;
+
+    setIsAnalyzing(true);
+    setAnalysisError(null);
+
+    try {
+      // Capture the map view
+      const bounds = new google.maps.LatLngBounds();
+      propertyBoundary.getPath().forEach((point) => {
+        bounds.extend(point);
+      });
+      const imageUrl = await captureMapView(map, bounds);
+      
+      // Run vision analysis
+      const analysis = await analyzePropertyImage(imageUrl);
+      setVisionAnalysis(analysis);
+
+      // Update property type eligibility based on vision analysis
+      if (analysis.confidence > 0.8) {
+        if (analysis.propertyType === 'townhouse') {
+          setPropertyAnalysis(prev => ({
+            ...prev,
+            eligible: false,
+            reason: 'Property appears to be a townhouse based on satellite imagery analysis'
+          }));
+        } else if (analysis.propertyType === 'single_family') {
+          setPropertyAnalysis(prev => ({
+            ...prev,
+            eligible: true
+          }));
+        }
+      }
+    } catch (error) {
+      console.error('Vision analysis failed:', error);
+      setAnalysisError('Failed to analyze property image. Please try again.');
+    } finally {
+      setIsAnalyzing(false);
+    }
+  };
+
+  useEffect(() => {
+    if (propertyBoundary && !visionAnalysis && !isAnalyzing) {
+      runVisionAnalysis();
+    }
+  }, [propertyBoundary]);
 
   return (
     <div className="container mx-auto p-4">
@@ -536,6 +586,87 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
           </div>
         </div>
       </div>
+      {isAnalyzing && (
+        <div className="p-4 bg-blue-50 rounded-lg">
+          <div className="flex items-center gap-2">
+            <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-500"></div>
+            <p>Analyzing property satellite image...</p>
+          </div>
+        </div>
+      )}
+
+      {analysisError && (
+        <div className="p-4 bg-red-50 rounded-lg text-red-700">
+          <p>{analysisError}</p>
+          <button 
+            onClick={runVisionAnalysis}
+            className="mt-2 text-sm font-medium text-red-600 hover:text-red-500"
+          >
+            Try Again
+          </button>
+        </div>
+      )}
+
+      {visionAnalysis && (
+        <div className="p-4 bg-white rounded-lg shadow">
+          <h3 className="font-semibold mb-2">Property Analysis</h3>
+          
+          <div className="space-y-2">
+            <div>
+              <span className="font-medium">Property Type: </span>
+              {visionAnalysis.propertyType === 'single_family' ? (
+                <span className="text-green-600">Single Family Home ✓</span>
+              ) : visionAnalysis.propertyType === 'townhouse' ? (
+                <span className="text-red-600">Townhouse ✗</span>
+              ) : (
+                <span className="text-yellow-600">Unknown</span>
+              )}
+            </div>
+
+            <div>
+              <span className="font-medium">Buildable Areas: </span>
+              <ul className="list-disc list-inside ml-2">
+                {visionAnalysis.buildableAreas.frontYard && (
+                  <li>Front Yard</li>
+                )}
+                {visionAnalysis.buildableAreas.backYard && (
+                  <li>Back Yard</li>
+                )}
+                {visionAnalysis.buildableAreas.sideYards && (
+                  <li>Side Yards</li>
+                )}
+                <li>Estimated Size: {visionAnalysis.buildableAreas.estimatedSize}</li>
+              </ul>
+            </div>
+
+            <div>
+              <span className="font-medium">Setbacks: </span>
+              <ul className="list-disc list-inside ml-2">
+                <li>Front: {visionAnalysis.setbacks.front} ft</li>
+                <li>Back: {visionAnalysis.setbacks.back} ft</li>
+                <li>Sides: {visionAnalysis.setbacks.sides.join(' ft, ')} ft</li>
+              </ul>
+            </div>
+
+            {visionAnalysis.existingStructures.length > 0 && (
+              <div>
+                <span className="font-medium">Existing Structures: </span>
+                <ul className="list-disc list-inside ml-2">
+                  {visionAnalysis.existingStructures.map((structure, i) => (
+                    <li key={i}>
+                      {structure.type} ({structure.approximateSize}) - {structure.location}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <div className="mt-2 text-sm text-gray-500">
+              Analysis Confidence: {Math.round(visionAnalysis.confidence * 100)}%
+            </div>
+          </div>
+        </div>
+      )}
       {visionFeedback && (
         <div className={`p-4 rounded-lg ${visionFeedback.isValid ? 'bg-green-100' : 'bg-yellow-100'}`}>
           <h3 className="font-semibold mb-2">

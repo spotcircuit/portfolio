@@ -1,47 +1,65 @@
 # ADU Planner
 
-A Next.js application for planning Accessory Dwelling Units (ADUs) using AI-powered property analysis.
+An AI-powered Next.js application for planning Accessory Dwelling Units (ADUs) using satellite imagery analysis and interactive property planning tools.
 
 ## Features
 
-### 1. Property Analysis
-- Automatic property type detection (single-family vs townhouse)
-- Buildable area identification
-- Setback calculation and visualization
-- Integration with Google Maps and Places API
-- AI-powered satellite image analysis using GPT-4 Vision
+### 1. AI Vision Analysis
+- **Automatic Property Analysis**
+  - Property type detection (single-family vs townhouse)
+  - Buildable area identification with size estimates
+  - Setback measurements from property lines
+  - Existing structure detection and location mapping
+  - Confidence scoring for analysis results
 
-### 2. ADU Planning Tools
-- Interactive property map with drawing tools
-- Real-time ADU placement validation
+- **ADU Placement Validation**
+  - Real-time validation of proposed ADU locations
+  - Setback compliance checking
+  - Smart placement suggestions
+  - Visual feedback for valid/invalid placements
+
+### 2. Interactive Planning Tools
+- Property boundary drawing with Google Maps
+- Area and distance measurements
+- ADU placement and sizing tools
+- Real-time zoning compliance checks
+- Satellite view analysis
+
+### 3. Property Information
+- Address autocomplete with Google Places API
+- Zoning information lookup
+- Property dimensions calculation
 - Setback visualization
-- Area measurements and calculations
-- Zoning compliance checks
+- Buildable area highlighting
 
-### 3. AI Features
-- GPT-4 Vision analysis for property type detection
-- Automated setback measurement
-- Real-time placement validation
-- Building code compliance checking
-
-## Tech Stack
-
-- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
-- **Maps**: Google Maps JavaScript API, Places API
-- **AI**: OpenAI GPT-4 Vision API
-- **State Management**: React Context
-- **Styling**: Tailwind CSS, Heroicons
-
-## Getting Started
+## Quick Start
 
 ### Prerequisites
+```bash
+# Required software
 - Node.js 18+
 - npm or yarn
-- Google Maps API key
-- OpenAI API key
+- Git
 
-### Environment Setup
-Create a `.env.local` file with:
+# Required API Keys
+- Google Maps API key (with Places, Maps JavaScript API enabled)
+- OpenAI API key (with GPT-4 Vision access)
+```
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd aduplanner-next
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Set up environment variables in `.env.local`:
 ```env
 NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_key
 OPENAI_API_KEY=your_openai_key
@@ -49,79 +67,115 @@ OPENAI_ORGANIZATION_ID=your_org_id
 OPENAI_MODEL=gpt-40-mini
 ```
 
-### Installation
+4. Run the development server:
 ```bash
-# Install dependencies
-npm install
-
-# Run development server
 npm run dev
 ```
 
-### Development Commands
-```bash
-# Run development server
-npm run dev
+## Usage Guide
 
-# Build for production
-npm run build
+### 1. Property Analysis
+1. Enter an address in the search bar
+2. Draw the property boundary on the map
+3. Wait for the AI vision analysis to complete
+4. Review the analysis results:
+   - Property type classification
+   - Buildable areas and sizes
+   - Setback measurements
+   - Existing structures
 
-# Start production server
-npm start
+### 2. ADU Planning
+1. Use the drawing tools to place an ADU
+2. The system will automatically:
+   - Validate setback compliance
+   - Check size restrictions
+   - Suggest optimal placements
+3. Adjust the placement based on AI feedback
 
-# Run tests
-npm test
+### 3. Vision Analysis Features
+- **Property Type Detection**
+  - Automatically identifies if the property is single-family or townhouse
+  - High confidence results affect eligibility status
+  - Manual re-analysis available
 
-# Run linter
-npm run lint
-```
+- **Buildable Area Analysis**
+  - Identifies front, back, and side yards
+  - Estimates usable space in each area
+  - Considers existing structures
+
+- **Setback Measurement**
+  - Automatic measurement of setbacks from property lines
+  - Front, back, and side setback detection
+  - Compliance checking with local regulations
 
 ## Project Structure
 
 ```
 aduplanner-next/
-├── app/                    # Next.js app directory
-│   ├── api/               # API routes
-│   │   └── vision/       # Vision API endpoints
-│   └── page.tsx          # Main page
-├── components/            # React components
-│   ├── map/              # Map-related components
-│   └── property/         # Property planning components
-├── lib/                   # Shared utilities
-│   ├── propertyAnalysis.ts  # Property analysis logic
-│   └── visionAnalysis.ts    # Vision API integration
-├── public/               # Static assets
-└── types/                # TypeScript type definitions
+├── app/
+│   ├── api/
+│   │   └── vision/
+│   │       ├── analyze/    # Property analysis endpoint
+│   │       └── validate/   # ADU placement validation
+│   └── page.tsx
+├── components/
+│   ├── map/
+│   │   └── tools/         # Drawing and measurement tools
+│   └── property/
+│       ├── PropertyPlanner.tsx
+│       └── AddressAutocomplete.tsx
+├── lib/
+│   ├── mapCapture.ts      # Map screenshot utilities
+│   ├── propertyAnalysis.ts
+│   └── visionAnalysis.ts  # GPT-4 Vision integration
+└── types/
+    └── property.ts        # TypeScript definitions
 ```
 
-## API Routes
+## Development
 
-### Vision Analysis
-- `POST /api/vision/analyze`
-  - Analyzes property images for type detection
-  - Requires image URL in request body
-  - Returns property analysis results
+### Running Tests
+```bash
+npm test
+```
 
-- `POST /api/vision/validate`
-  - Validates ADU placement
-  - Requires image URL and placement bounds
-  - Returns validation results and suggestions
+### Building for Production
+```bash
+npm run build
+npm start
+```
+
+### Adding New Features
+1. Create feature branch
+2. Implement changes
+3. Add tests
+4. Create pull request
+
+## Troubleshooting
+
+### Common Issues
+1. **Vision Analysis Fails**
+   - Check API key permissions
+   - Verify satellite image is clear
+   - Try redrawing property boundary
+
+2. **Map Loading Issues**
+   - Verify Google Maps API key
+   - Check API quota usage
+   - Enable required Google APIs
+
+3. **ADU Validation Errors**
+   - Confirm property boundary is accurate
+   - Check setback requirements
+   - Verify property type detection
 
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
-## Environment Variables
-
-Required environment variables:
-- `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY`: Google Maps API key
-- `OPENAI_API_KEY`: OpenAI API key
-- `OPENAI_ORGANIZATION_ID`: OpenAI organization ID
-- `OPENAI_MODEL`: OpenAI model name (default: gpt-40-mini)
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Create Pull Request
 
 ## License
 
@@ -129,7 +183,7 @@ MIT License - see LICENSE file for details
 
 ## Acknowledgments
 
-- Built with Next.js
+- Built with Next.js 14
 - Uses Google Maps Platform
 - Powered by OpenAI's GPT-4 Vision
-- Inspired by the ADU-Planner RAG-a-thon 2024 project
+- Inspired by ADU-Planner RAG-a-thon 2024

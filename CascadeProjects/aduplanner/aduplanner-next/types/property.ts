@@ -42,3 +42,24 @@ export interface PropertyAnalysis {
   buildableArea?: BuildableArea;
   suggestedLayouts?: ReadonlyArray<ADULayout>;
 }
+
+export interface VisionAnalysisResult {
+  propertyType: 'single_family' | 'townhouse' | 'unknown';
+  buildableAreas: {
+    frontYard?: boolean;
+    backYard?: boolean;
+    sideYards?: boolean;
+    estimatedSize: string;
+  };
+  setbacks: {
+    front: number;
+    back: number;
+    sides: number[];
+  };
+  existingStructures: {
+    type: string;
+    location: string;
+    approximateSize: string;
+  }[];
+  confidence: number;
+}
