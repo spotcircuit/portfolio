@@ -1,4 +1,5 @@
 import type { PropertyBounds, PropertyDimensions, Setbacks, BuildableArea, ADULayout, PropertyAnalysis } from '@/types/property';
+import { analyzePropertyImage, PropertyAnalysisResult } from './visionAnalysis';
 
 const FEET_PER_DEGREE_LAT = 364000;  // approximate feet per degree of latitude
 const FEET_PER_DEGREE_LNG = 288200;  // approximate feet per degree of longitude at 40° latitude
@@ -22,16 +23,161 @@ const ADU_TEMPLATES: ReadonlyArray<ADUTemplate> = [
 // 3. Property records and deed restrictions
 // 4. Environmental and historic district data
 
-export async function analyzePropertyByAddress(address: string) {
-  // PROTOTYPE ONLY - Replace with real API calls
-  console.warn('Using prototype analysis - real implementation needs zoning API integration');
+export async function isEligiblePropertyType(placeDetails: google.maps.places.PlaceResult): Promise<{ eligible: boolean; reason?: string }> {
+  // First try vision analysis if satellite image is available
+  if (placeDetails.photos && placeDetails.photos.length > 0) {
+    try {
+      const photoUrl = placeDetails.photos[0].getUrl();
+      const visionAnalysis = await analyzePropertyImage(photoUrl);
+      
+      if (visionAnalysis.confidence > 0.8) {
+        if (visionAnalysis.propertyType === 'townhouse') {
+          return { 
+            eligible: false, 
+            reason: 'Property appears to be a townhouse based on satellite imagery analysis' 
+          };
+        }
+        if (visionAnalysis.propertyType === 'single_family' && visionAnalysis.buildableAreas.backYard) {
+          return { 
+            eligible: true 
+          };
+        }
+      }
+    } catch (error) {
+      console.error('Vision analysis failed:', error);
+      // Fall back to traditional checks if vision fails
+    }
+  }
+
+  // Fallback to traditional checks
+  // Log all available metadata
+  console.log('Full Place Details:', {
+    address_components: placeDetails.address_components,
+    adr_address: placeDetails.adr_address,
+    business_status: placeDetails.business_status,
+    formatted_address: placeDetails.formatted_address,
+    geometry: placeDetails.geometry,
+    icon: placeDetails.icon,
+    name: placeDetails.name,
+    photos: placeDetails.photos,
+    place_id: placeDetails.place_id,
+    plus_code: placeDetails.plus_code,
+    rating: placeDetails.rating,
+    reference: placeDetails.reference,
+    reviews: placeDetails.reviews,
+    types: placeDetails.types,
+    url: placeDetails.url,
+    utc_offset: placeDetails.utc_offset,
+    vicinity: placeDetails.vicinity,
+    website: placeDetails.website,
+    html_attributions: placeDetails.html_attributions,
+    utc_offset_minutes: placeDetails.utc_offset_minutes,
+    price_level: placeDetails.price_level,
+    opening_hours: placeDetails.opening_hours
+  });
+
+  // Log specific geometry details
+  if (placeDetails.geometry) {
+    console.log('Location Details:', {
+      lat: placeDetails.geometry.location?.lat(),
+      lng: placeDetails.geometry.location?.lng(),
+      viewport: placeDetails.geometry.viewport,
+      bounds: placeDetails.geometry.bounds
+    });
+  }
+
+  // Log address component details
+  if (placeDetails.address_components) {
+    console.log('Address Components Breakdown:', placeDetails.address_components.map(comp => ({
+      long_name: comp.long_name,
+      short_name: comp.short_name,
+      types: comp.types
+    })));
+  }
+
+  const types = placeDetails.types || [];
+  const addressComponents = placeDetails.address_components || [];
+
+  // Enhanced debug logging
+  console.log('Place Types:', types);
+  console.log('Address Components:', addressComponents);
+  console.log('Formatted Address:', placeDetails.formatted_address);
+  console.log('Place Name:', placeDetails.name);
+
+  // First check: Is it residential?
+  const residentialTypes = ['single_family_dwelling', 'house', 'residential', 'premise', 'street_address'];
+  const isResidential = types.some(type => residentialTypes.includes(type));
   
-  // Extract location data
+  console.log('Is Residential Check:', { isResidential, matchedTypes: types.filter(t => residentialTypes.includes(t)) });
+  
+  if (!isResidential) {
+    return {
+      eligible: false,
+      reason: `Not a residential property. Found types: [${types.join(', ')}]`
+    };
+  }
+
+  // Second check: What kind of residential?
+  // Check for townhouse/rowhouse indicators
+  const subpremise = addressComponents.find(comp => comp.types.includes('subpremise'));
+  if (subpremise) {
+    return {
+      eligible: false,
+      reason: 'Property is a townhouse/rowhouse (has unit number)'
+    };
+  }
+
+  // Check for specific residential subtypes that aren't eligible
+  const ineligibleResidentialTypes = [
+    'townhouse',
+    'row_house',
+    'multi_family',
+    'duplex',
+    'triplex',
+    'apartment',
+    'condo'
+  ];
+
+  const foundIneligibleTypes = types.filter(type => ineligibleResidentialTypes.includes(type));
+  if (foundIneligibleTypes.length > 0) {
+    return {
+      eligible: false,
+      reason: `Property is not a detached single-family home. Type: ${foundIneligibleTypes.join(', ')}`
+    };
+  }
+
+  // If it passed all checks, it's likely a detached single-family home
+  return { eligible: true };
+}
+
+export async function analyzePropertyByAddress(address: string, placeDetails: google.maps.places.PlaceResult) {
+  // First check property type eligibility
+  const eligibilityCheck = await isEligiblePropertyType(placeDetails);
+  if (!eligibilityCheck.eligible) {
+    return {
+      eligible: false,
+      reason: eligibilityCheck.reason
+    };
+  }
+
+  // Get vision analysis if available
+  let visionAnalysis: PropertyAnalysisResult | null = null;
+  if (placeDetails.photos && placeDetails.photos.length > 0) {
+    try {
+      const photoUrl = placeDetails.photos[0].getUrl();
+      visionAnalysis = await analyzePropertyImage(photoUrl);
+    } catch (error) {
+      console.error('Vision analysis failed:', error);
+    }
+  }
+
   const zipCode = address.match(/\b\d{5}\b/)?.[0] || '';
-  const state = 'UNKNOWN'; // TODO: Get from geocoding API
   
   return {
-    isEligible: true,
+    eligible: true,
+    address,
+    placeDetails,
+    visionAnalysis,
     zoning: 'R-1 (Single Family Residential)',
     maxSize: 111.48, // 1200 sq ft
     restrictions: [

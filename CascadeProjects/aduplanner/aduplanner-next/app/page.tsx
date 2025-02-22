@@ -5,6 +5,7 @@ import { HomeModernIcon } from '@heroicons/react/24/outline';
 import AddressAutocomplete from '@/components/property/AddressAutocomplete';
 import dynamic from 'next/dynamic';
 import type { LatLngLiteral } from '@googlemaps/google-maps-services-js';
+import { analyzePropertyByAddress } from '@/lib/propertyAnalysis';
 
 // Import PropertyPlanner dynamically to avoid SSR issues
 const PropertyPlanner = dynamic(() => import('@/components/property/PropertyPlanner'), {
@@ -35,22 +36,8 @@ export default function Home() {
     address: string,
     placeDetails: google.maps.places.PlaceResult
   ) => {
-    const analysis = {
-      isEligible: true,
-      zoning: 'R-1 (Single Family Residential)',
-      maxSize: 111.48, // 1200 sq ft
-      restrictions: [
-        'Maximum height: 16 feet (4.88m)',
-        'Must maintain 4 feet (1.22m) side and rear setbacks',
-        'Cannot be placed in front yard',
-        'Must have separate entrance from main dwelling'
-      ],
-      disclaimers: [
-        'This is a preliminary analysis only. Please consult with local planning authorities.',
-        'Additional restrictions may apply based on specific lot conditions.',
-        'Building permits and inspections required.'
-      ]
-    };
+    // Get the initial analysis using the place details
+    const analysis = await analyzePropertyByAddress(address, placeDetails);
     setSelectedLocation({ location, address, placeDetails, analysis });
   };
 

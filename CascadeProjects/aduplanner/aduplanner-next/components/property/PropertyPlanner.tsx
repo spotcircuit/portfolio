@@ -19,6 +19,7 @@ import {
 } from '@heroicons/react/24/outline';
 import DrawingTools from '../map/tools/DrawingTools';
 import { analyzePropertyByAddress } from '@/lib/propertyAnalysis';
+import { validateADUPlacement } from '@/lib/visionAnalysis';
 
 interface PropertyPlannerProps {
   location: google.maps.LatLngLiteral;
@@ -73,17 +74,24 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
   const [visionAnalysis, setVisionAnalysis] = useState<string | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
-  const [propertyAnalysis, setPropertyAnalysis] = useState<any>(null);
+  const [propertyAnalysis, setPropertyAnalysis] = useState(initialAnalysis);
   const [isDrawingActive, setIsDrawingActive] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+  const [visionFeedback, setVisionFeedback] = useState<{
+    isValid: boolean;
+    reasons: string[];
+    suggestions: string[];
+  } | null>(null);
 
   useEffect(() => {
     const analyze = async () => {
-      const analysis = await analyzePropertyByAddress(address);
-      setPropertyAnalysis(analysis);
+      if (placeDetails) {
+        const analysis = await analyzePropertyByAddress(address, placeDetails);
+        setPropertyAnalysis(analysis);
+      }
     };
     analyze();
-  }, [address]);
+  }, [address, placeDetails]);
 
   const onLoad = useCallback((map: google.maps.Map) => {
     setMap(map);
@@ -229,6 +237,23 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
     setMeasurements(measurement);
   }, []);
 
+  const handleADUPlacement = async (bounds: any) => {
+    if (placeDetails?.photos && placeDetails.photos.length > 0) {
+      try {
+        const photoUrl = placeDetails.photos[0].getUrl();
+        const feedback = await validateADUPlacement(photoUrl, {
+          x: bounds.x,
+          y: bounds.y,
+          width: bounds.width,
+          height: bounds.height
+        });
+        setVisionFeedback(feedback);
+      } catch (error) {
+        console.error('Vision validation failed:', error);
+      }
+    }
+  };
+
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-col lg:flex-row gap-4">
@@ -372,20 +397,82 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <ChevronRightIcon className="h-5 w-5 text-blue-500 mt-1" />
-                  <div>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Zoning:</span> {propertyAnalysis?.zoning || initialAnalysis.zoning}
-                    </p>
+                
+                {!propertyAnalysis?.isEligible && propertyAnalysis?.ineligibilityReason && (
+                  <div className="flex items-start gap-2 bg-red-50 p-3 rounded-lg border border-red-100">
+                    <XMarkIcon className="h-5 w-5 text-red-500 mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="text-red-700 font-medium">Not Eligible for ADU</p>
+                      <p className="text-red-600">{propertyAnalysis.ineligibilityReason}</p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Property Characteristics */}
+                <div className="border-t border-blue-100 pt-3 mt-3">
+                  <h4 className="text-sm font-medium text-blue-700 mb-2">Property Characteristics</h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="text-sm">
+                      <span className="text-gray-600">Type:</span>
+                      <span className="ml-1 text-gray-900">{placeDetails?.types?.includes('single_family_dwelling') ? 'Single Family' : 'Residential'}</span>
+                    </div>
+                    {measurements.area && (
+                      <div className="text-sm">
+                        <span className="text-gray-600">Lot Size:</span>
+                        <span className="ml-1 text-gray-900">{Math.round(measurements.area).toLocaleString()} sq ft</span>
+                      </div>
+                    )}
+                    <div className="text-sm">
+                      <span className="text-gray-600">Zoning:</span>
+                      <span className="ml-1 text-gray-900">{propertyAnalysis?.zoning}</span>
+                    </div>
+                    <div className="text-sm">
+                      <span className="text-gray-600">Max ADU:</span>
+                      <span className="ml-1 text-gray-900">{propertyAnalysis?.maxSize} sq ft</span>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-2">
-                  <ChevronRightIcon className="h-5 w-5 text-blue-500 mt-1" />
-                  <div>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Max ADU Size:</span> {propertyAnalysis?.maxSize || initialAnalysis.maxSize} sq ft
-                    </p>
+
+                {/* Location Context */}
+                <div className="border-t border-blue-100 pt-3">
+                  <h4 className="text-sm font-medium text-blue-700 mb-2">Location Context</h4>
+                  <div className="space-y-1">
+                    {placeDetails?.address_components?.map((component, index) => {
+                      if (component.types.includes('neighborhood') || 
+                          component.types.includes('sublocality') ||
+                          component.types.includes('locality')) {
+                        return (
+                          <div key={index} className="text-sm">
+                            <span className="text-gray-600">{component.types[0].charAt(0).toUpperCase() + component.types[0].slice(1)}:</span>
+                            <span className="ml-1 text-gray-900">{component.long_name}</span>
+                          </div>
+                        );
+                      }
+                      return null;
+                    })}
+                  </div>
+                </div>
+
+                {/* Setback Requirements */}
+                <div className="border-t border-blue-100 pt-3">
+                  <h4 className="text-sm font-medium text-blue-700 mb-2">Setback Requirements</h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="text-sm">
+                      <span className="text-gray-600">Front:</span>
+                      <span className="ml-1 text-gray-900">20 ft</span>
+                    </div>
+                    <div className="text-sm">
+                      <span className="text-gray-600">Back:</span>
+                      <span className="ml-1 text-gray-900">15 ft</span>
+                    </div>
+                    <div className="text-sm">
+                      <span className="text-gray-600">Sides:</span>
+                      <span className="ml-1 text-gray-900">5 ft</span>
+                    </div>
+                    <div className="text-sm">
+                      <span className="text-gray-600">Height Limit:</span>
+                      <span className="ml-1 text-gray-900">16 ft</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -422,9 +509,60 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
                 ))}
               </div>
             </div>
+
+            {/* Debug Information */}
+            <div className="border-t border-blue-100 pt-3 mt-3">
+              <h4 className="text-sm font-medium text-blue-700 mb-2">Property Metadata (Debug)</h4>
+              <div className="bg-gray-50 p-3 rounded-lg text-xs font-mono overflow-auto max-h-96">
+                <pre>
+                  {JSON.stringify({
+                    address_components: placeDetails?.address_components,
+                    types: placeDetails?.types,
+                    geometry: {
+                      location: {
+                        lat: placeDetails?.geometry?.location?.lat(),
+                        lng: placeDetails?.geometry?.location?.lng()
+                      },
+                      viewport: placeDetails?.geometry?.viewport,
+                      bounds: placeDetails?.geometry?.bounds
+                    },
+                    formatted_address: placeDetails?.formatted_address,
+                    name: placeDetails?.name,
+                    vicinity: placeDetails?.vicinity
+                  }, null, 2)}
+                </pre>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {visionFeedback && (
+        <div className={`p-4 rounded-lg ${visionFeedback.isValid ? 'bg-green-100' : 'bg-yellow-100'}`}>
+          <h3 className="font-semibold mb-2">
+            {visionFeedback.isValid ? 'Valid Placement ✓' : 'Placement Issues ⚠️'}
+          </h3>
+          {visionFeedback.reasons.length > 0 && (
+            <div className="mb-2">
+              <h4 className="font-medium">Analysis:</h4>
+              <ul className="list-disc list-inside">
+                {visionFeedback.reasons.map((reason, i) => (
+                  <li key={i}>{reason}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {visionFeedback.suggestions.length > 0 && (
+            <div>
+              <h4 className="font-medium">Suggestions:</h4>
+              <ul className="list-disc list-inside">
+                {visionFeedback.suggestions.map((suggestion, i) => (
+                  <li key={i}>{suggestion}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };
