@@ -11,7 +11,11 @@ import {
   ChevronRightIcon,
   XMarkIcon,
   TrashIcon,
-  LightBulbIcon
+  LightBulbIcon,
+  PencilSquareIcon as PencilIcon,
+  ArrowsPointingInIcon,
+  ArrowsUpDownIcon,
+  RectangleStackIcon
 } from '@heroicons/react/24/outline';
 import DrawingTools from '../map/tools/DrawingTools';
 import { analyzePropertyByAddress } from '@/lib/propertyAnalysis';
@@ -229,7 +233,7 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
     <div className="container mx-auto p-4">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Left side - Map and Instructions */}
-        <div className="w-full lg:w-1/2 space-y-4">
+        <div className="w-full lg:w-[70%] space-y-4">
           {/* Map */}
           <div className="bg-white rounded-lg shadow p-4 relative">
             {/* Map Controls and Measurements */}
@@ -247,7 +251,7 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
                       : 'bg-white hover:bg-gray-100 text-gray-700'
                   } shadow-lg`}
                 >
-                  <PencilSquareIcon className="w-5 h-5" />
+                  <PencilIcon className="w-5 h-5" />
                   <span>Draw</span>
                 </button>
                 <button
@@ -311,33 +315,34 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
             </div>
           </div>
 
-          {/* Instructions */}
-          <div className="bg-white rounded-lg shadow p-6">
+          {/* Instructions - Same width as map */}
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg shadow p-6">
             <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
               <LightBulbIcon className="h-6 w-6 text-blue-500" />
               Drawing Instructions
             </h2>
-            <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <p className="text-gray-700 font-medium">1. Start Drawing</p>
+                <p className="text-gray-700 font-medium flex items-center gap-2">
+                  <PencilIcon className="h-5 w-5 text-blue-500" /> 1. Start Drawing
+                </p>
                 <p className="text-gray-600 pl-4">Click the "Draw" button to activate the drawing tool</p>
-              </div>
-              
-              <div className="space-y-2">
-                <p className="text-gray-700 font-medium">2. Create Your Line</p>
+                <p className="text-gray-700 font-medium mt-4 flex items-center gap-2">
+                  <ArrowsPointingInIcon className="h-5 w-5 text-blue-500" /> 2. Create Your Line
+                </p>
                 <p className="text-gray-600 pl-4">Click once on the map to set your starting point</p>
                 <p className="text-gray-600 pl-4">Click again to set your ending point</p>
               </div>
-
               <div className="space-y-2">
-                <p className="text-gray-700 font-medium">3. Adjust Your Line</p>
+                <p className="text-gray-700 font-medium flex items-center gap-2">
+                  <ArrowsUpDownIcon className="h-5 w-5 text-blue-500" /> 3. Adjust Your Line
+                </p>
                 <p className="text-gray-600 pl-4">Drag either endpoint to modify the line length</p>
                 <p className="text-gray-600 pl-4">Drag the middle of the line to move it entirely</p>
-              </div>
-
-              <div className="space-y-2">
-                <p className="text-gray-700 font-medium">4. View Measurements</p>
-                <p className="text-gray-600 pl-4">Distance and area measurements will update automatically</p>
+                <p className="text-gray-700 font-medium mt-4 flex items-center gap-2">
+                  <RectangleStackIcon className="h-5 w-5 text-blue-500" /> 4. View Measurements
+                </p>
+                <p className="text-gray-600 pl-4">Distance and area measurements update automatically</p>
                 <p className="text-gray-600 pl-4">Use the "Clear" button to start over if needed</p>
               </div>
             </div>
@@ -345,8 +350,8 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
         </div>
 
         {/* Right side - Property Analysis */}
-        <div className="w-full lg:w-1/2">
-          <div className="bg-white rounded-lg shadow p-6">
+        <div className="w-full lg:w-[30%] space-y-4">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg shadow p-6">
             <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
               <InformationCircleIcon className="h-6 w-6 text-blue-500" />
               Property Analysis
@@ -354,44 +359,68 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
             
             {/* Property Details */}
             <div className="mb-6">
-              <h3 className="text-lg font-medium mb-2">Property Details</h3>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <p className="text-gray-700 mb-2">
-                  <span className="font-medium">Address:</span> {address}
-                </p>
-                <p className="text-gray-700 mb-2">
-                  <span className="font-medium">Zoning:</span> {propertyAnalysis?.zoning || initialAnalysis.zoning}
-                </p>
-                <p className="text-gray-700">
-                  <span className="font-medium">Max ADU Size:</span> {propertyAnalysis?.maxSize || initialAnalysis.maxSize} sq ft
-                </p>
+              <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
+                <HomeIcon className="h-5 w-5 text-blue-500" />
+                Property Details
+              </h3>
+              <div className="space-y-3">
+                <div className="flex items-start gap-2">
+                  <ChevronRightIcon className="h-5 w-5 text-blue-500 mt-1" />
+                  <div>
+                    <p className="text-gray-700">
+                      <span className="font-medium">Address:</span> {address}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <ChevronRightIcon className="h-5 w-5 text-blue-500 mt-1" />
+                  <div>
+                    <p className="text-gray-700">
+                      <span className="font-medium">Zoning:</span> {propertyAnalysis?.zoning || initialAnalysis.zoning}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <ChevronRightIcon className="h-5 w-5 text-blue-500 mt-1" />
+                  <div>
+                    <p className="text-gray-700">
+                      <span className="font-medium">Max ADU Size:</span> {propertyAnalysis?.maxSize || initialAnalysis.maxSize} sq ft
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Restrictions */}
             <div className="mb-6">
-              <h3 className="text-lg font-medium mb-2">Restrictions</h3>
-              <ul className="bg-gray-50 p-4 rounded-lg space-y-2">
+              <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
+                <XMarkIcon className="h-5 w-5 text-blue-500" />
+                Restrictions
+              </h3>
+              <div className="space-y-2">
                 {(propertyAnalysis?.restrictions || initialAnalysis.restrictions).map((restriction, index) => (
-                  <li key={index} className="text-gray-700 flex items-start gap-2">
-                    <ChevronRightIcon className="h-5 w-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                    {restriction}
-                  </li>
+                  <div key={index} className="flex items-start gap-2">
+                    <ChevronRightIcon className="h-5 w-5 text-blue-500 mt-1" />
+                    <p className="text-gray-700">{restriction}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
 
             {/* Disclaimers */}
             <div>
-              <h3 className="text-lg font-medium mb-2">Disclaimers</h3>
-              <ul className="bg-gray-50 p-4 rounded-lg space-y-2 text-sm text-gray-600">
+              <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
+                <InformationCircleIcon className="h-5 w-5 text-blue-500" />
+                Disclaimers
+              </h3>
+              <div className="space-y-2">
                 {(propertyAnalysis?.disclaimers || initialAnalysis.disclaimers).map((disclaimer, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <InformationCircleIcon className="h-5 w-5 text-gray-400 flex-shrink-0 mt-0.5" />
-                    {disclaimer}
-                  </li>
+                  <div key={index} className="flex items-start gap-2">
+                    <InformationCircleIcon className="h-5 w-5 text-gray-400 flex-shrink-0 mt-1" />
+                    <p className="text-gray-600 text-sm">{disclaimer}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </div>
