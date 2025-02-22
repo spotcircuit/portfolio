@@ -77,7 +77,13 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [analysisError, setAnalysisError] = useState<string | null>(null);
   const [showInfo, setShowInfo] = useState(false);
-  const [propertyAnalysis, setPropertyAnalysis] = useState(initialAnalysis);
+  const [propertyAnalysis, setPropertyAnalysis] = useState(initialAnalysis || {
+    isEligible: false,
+    zoning: '',
+    maxSize: 0,
+    restrictions: [],
+    disclaimers: []
+  });
   const [isDrawingActive, setIsDrawingActive] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [visionFeedback, setVisionFeedback] = useState<{
@@ -96,38 +102,15 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
     analyze();
   }, [address, placeDetails]);
 
-  const onLoad = useCallback((map: google.maps.Map) => {
-    setMap(map);
-    map.setZoom(20);
-  }, []);
-
-  const onUnmount = useCallback(() => {
-    setMap(null);
-  }, []);
-
-  const analyzePropertyWithVision = async (map: google.maps.Map) => {
-    if (!propertyBoundary) return;
-    
+  const analyzePropertyWithVision = useCallback(async (map: google.maps.Map) => {
     setIsAnalyzing(true);
     try {
-      // Get the bounds of the drawn property
-      const bounds = new google.maps.LatLngBounds();
-      propertyBoundary.getPath().forEach((point) => {
-        bounds.extend(point);
-      });
-      
-      // Adjust map view to fit the property
-      map.fitBounds(bounds);
-      
-      // Wait a moment for the map to update
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
       // Capture the map view as an image
       const canvas = document.querySelector('canvas') as HTMLCanvasElement;
       const imageUrl = canvas.toDataURL();
       
       // Send to our Vision API
-      const response = await fetch('/api/vision', {
+      const response = await fetch('/api/vision/analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -136,16 +119,34 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
         })
       });
       
+      if (!response.ok) {
+        throw new Error(`Vision analysis failed: ${response.statusText}`);
+      }
+      
       const data = await response.json();
       if (data.error) throw new Error(data.error);
       
       setVisionAnalysis(data.analysis);
     } catch (error) {
       console.error('Failed to analyze property:', error);
+      setAnalysisError(error instanceof Error ? error.message : 'Failed to analyze property');
     } finally {
       setIsAnalyzing(false);
     }
-  };
+  }, [address]);
+
+  const onLoad = useCallback((map: google.maps.Map) => {
+    setMap(map);
+    map.setZoom(20);
+    // Wait for map to fully load before analysis
+    setTimeout(() => {
+      analyzePropertyWithVision(map);
+    }, 1000);
+  }, [analyzePropertyWithVision]);
+
+  const onUnmount = useCallback(() => {
+    setMap(null);
+  }, []);
 
   const getCursor = useCallback(() => {
     if (isDrawingActive) return 'crosshair';
@@ -432,6 +433,63 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
               Property Analysis
             </h2>
             
+            {/* Vision Analysis Results */}
+            <div className="mt-4 mb-6 bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-medium text-gray-900">Vision Analysis Results</h3>
+                {isAnalyzing ? (
+                  <div className="flex items-center text-sm text-gray-500">
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-500 mr-2"></div>
+                    Analyzing property...
+                  </div>
+                ) : visionAnalysis ? (
+                  <div className="flex items-center text-sm">
+                    <LightBulbIcon className="h-5 w-5 text-green-500 mr-2" />
+                    <span className="text-green-600">Analysis complete</span>
+                  </div>
+                ) : null}
+              </div>
+
+              {visionAnalysis && !isAnalyzing && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Buildable Areas */}
+                  <div>
+                    <h4 className="text-sm font-medium text-gray-700">Buildable Areas</h4>
+                    <ul className="mt-2 space-y-2">
+                      {visionAnalysis.buildableAreas.frontYard && (
+                        <li className="flex items-center">
+                          <div className="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+                          Front Yard (Highly Suitable)
+                        </li>
+                      )}
+                      {visionAnalysis.buildableAreas.backYard && (
+                        <li className="flex items-center">
+                          <div className="h-3 w-3 rounded-full bg-green-500 mr-2"></div>
+                          Back Yard (Highly Suitable)
+                        </li>
+                      )}
+                      {visionAnalysis.buildableAreas.sideYards && (
+                        <li className="flex items-center">
+                          <div className="h-3 w-3 rounded-full bg-yellow-500 mr-2"></div>
+                          Side Yards (Potentially Suitable)
+                        </li>
+                      )}
+                    </ul>
+                  </div>
+
+                  {/* Setbacks */}
+                  <div>
+                    <h4 className="text-sm font-medium text-gray-700">Detected Setbacks</h4>
+                    <ul className="mt-2 space-y-1">
+                      <li>Front: {visionAnalysis.setbacks.front} ft</li>
+                      <li>Back: {visionAnalysis.setbacks.back} ft</li>
+                      <li>Sides: {visionAnalysis.setbacks.sides.join(' ft, ')} ft</li>
+                    </ul>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {/* Property Details */}
             <div className="mb-6">
               <h3 className="text-lg font-medium mb-2 flex items-center gap-2">
@@ -535,7 +593,7 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
                 Restrictions
               </h3>
               <div className="space-y-2">
-                {(propertyAnalysis?.restrictions || initialAnalysis.restrictions).map((restriction, index) => (
+                {((propertyAnalysis?.restrictions ?? initialAnalysis?.restrictions) || []).map((restriction, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <ChevronRightIcon className="h-5 w-5 text-blue-500 mt-1" />
                     <p className="text-gray-700">{restriction}</p>
@@ -551,7 +609,7 @@ const PropertyPlanner: FC<PropertyPlannerProps> = ({
                 Disclaimers
               </h3>
               <div className="space-y-2">
-                {(propertyAnalysis?.disclaimers || initialAnalysis.disclaimers).map((disclaimer, index) => (
+                {((propertyAnalysis && propertyAnalysis.disclaimers) || []).map((disclaimer, index) => (
                   <div key={index} className="flex items-start gap-2">
                     <InformationCircleIcon className="h-5 w-5 text-gray-400 flex-shrink-0 mt-1" />
                     <p className="text-gray-600 text-sm">{disclaimer}</p>

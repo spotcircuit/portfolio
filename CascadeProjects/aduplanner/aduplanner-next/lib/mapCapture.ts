@@ -1,3 +1,4 @@
+import html2canvas from 'html2canvas';
 import { PropertyBounds } from '@/types/property';
 
 export async function captureMapView(
@@ -35,8 +36,12 @@ export async function captureMapView(
             const dataUrl = canvas.toDataURL('image/jpeg', 0.9);
             document.body.removeChild(staticMapDiv);
             resolve(dataUrl);
+          }).catch(error => {
+            document.body.removeChild(staticMapDiv);
+            reject(error);
           });
         } catch (error) {
+          document.body.removeChild(staticMapDiv);
           reject(error);
         }
       });

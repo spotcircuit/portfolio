@@ -20,7 +20,9 @@ export interface PropertyAnalysisResult {
 }
 
 export async function analyzePropertyImage(imageUrl: string): Promise<PropertyAnalysisResult> {
+  console.log('Starting vision analysis...');
   try {
+    console.log('Sending request to /api/vision/analyze');
     const response = await fetch('/api/vision/analyze', {
       method: 'POST',
       headers: {
@@ -29,14 +31,33 @@ export async function analyzePropertyImage(imageUrl: string): Promise<PropertyAn
       body: JSON.stringify({ imageUrl }),
     });
 
+    console.log('Response status:', response.status);
+    const responseText = await response.text();
+    console.log('Response text:', responseText);
+
     if (!response.ok) {
-      throw new Error('Vision analysis failed');
+      throw new Error(`Vision analysis failed: ${response.status} ${responseText}`);
     }
 
-    const result = await response.json();
+    // Try to parse the response as JSON
+    let result;
+    try {
+      result = JSON.parse(responseText);
+    } catch (e) {
+      console.error('Failed to parse response as JSON:', e);
+      throw new Error('Invalid JSON response from vision analysis');
+    }
+
+    // Validate the response shape
+    if (!result.propertyType || !result.buildableAreas || !result.setbacks) {
+      console.error('Invalid response structure:', result);
+      throw new Error('Invalid response structure from vision analysis');
+    }
+
     return result as PropertyAnalysisResult;
   } catch (error) {
-    console.error('Error analyzing property image:', error);
+    console.error('Error in analyzePropertyImage:', error);
+    // Return a default result on error
     return {
       propertyType: 'unknown',
       buildableAreas: {
