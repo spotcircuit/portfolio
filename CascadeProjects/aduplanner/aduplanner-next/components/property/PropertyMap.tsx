@@ -77,6 +77,33 @@ const PropertyMap: FC<PropertyMapProps> = ({
 
   return (
     <div className="relative w-full rounded-lg overflow-hidden border-2 border-gray-200 mb-4">
+      {/* Map Controls */}
+      <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
+        <button
+          onClick={() => setDrawingMode('polygon')}
+          className={`px-4 py-2 rounded-lg shadow-md text-sm font-medium transition-colors ${
+            drawingMode === 'polygon'
+              ? 'bg-blue-600 text-white'
+              : 'bg-white text-gray-700 hover:bg-blue-50'
+          }`}
+        >
+          Draw Boundary
+        </button>
+        <button
+          onClick={() => {
+            setDrawingMode(null);
+            setIsDrawingActive(false);
+          }}
+          className="px-4 py-2 rounded-lg shadow-md text-sm font-medium bg-white text-gray-700 hover:bg-red-50"
+        >
+          Clear Drawing
+        </button>
+        {measurements.area && (
+          <div className="px-4 py-2 rounded-lg shadow-md text-sm font-medium bg-white text-gray-700">
+            Area: {Math.round(measurements.area)} sq ft
+          </div>
+        )}
+      </div>
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         options={{

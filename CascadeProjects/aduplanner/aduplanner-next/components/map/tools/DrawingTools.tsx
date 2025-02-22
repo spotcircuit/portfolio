@@ -5,12 +5,12 @@ import { useGoogleMap } from '@react-google-maps/api';
 
 interface DrawingToolsProps {
   map: google.maps.Map | null;
-  onShapeComplete: (shape: google.maps.Polygon) => void;
+  onBoundaryComplete: (shape: google.maps.Polygon) => void;
   drawingMode: 'polygon' | null;
   onMeasurementUpdate: (measurement: { distance: number | null; area: number | null }) => void;
 }
 
-const DrawingTools: FC<DrawingToolsProps> = ({ map, onShapeComplete, drawingMode, onMeasurementUpdate }) => {
+const DrawingTools: FC<DrawingToolsProps> = ({ map, onBoundaryComplete, drawingMode, onMeasurementUpdate }) => {
   const currentShape = useRef<google.maps.Polygon | null>(null);
   const mouseMoveListener = useRef<google.maps.MapsEventListener | null>(null);
   const clickListener = useRef<google.maps.MapsEventListener | null>(null);
@@ -178,17 +178,20 @@ const DrawingTools: FC<DrawingToolsProps> = ({ map, onShapeComplete, drawingMode
           const shape = currentShape.current!;
           setupShapeListeners(shape);
           
-          // Final measurements
-          updateMeasurements(path.current.getAt(0), endPoint);
+          // Complete shape
+          onBoundaryComplete(shape);
           
-          // Reset states
+          // Update measurements
+          if (path.current) {
+            const area = calculateArea(path.current);
+            onMeasurementUpdate({ distance: null, area });
+          }
+
+          // Reset drawing state
           isDrawing.current = false;
           firstClick.current = true;
-          currentShape.current = null;
           path.current = null;
-          
-          // Complete shape
-          onShapeComplete(shape);
+          currentShape.current = null;
         }
       };
 
@@ -200,7 +203,7 @@ const DrawingTools: FC<DrawingToolsProps> = ({ map, onShapeComplete, drawingMode
     } else if (!drawingMode) {
       clearCurrentShape();
     }
-  }, [map, drawingMode, onShapeComplete, onMeasurementUpdate]);
+  }, [map, drawingMode, onBoundaryComplete, onMeasurementUpdate]);
 
   return null;
 };
