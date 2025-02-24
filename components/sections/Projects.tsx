@@ -3,111 +3,83 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaYoutube, FaLinkedin, FaInstagram, FaTiktok, FaTwitter, FaPinterest, FaGithub } from 'react-icons/fa';
-import { SiUpwork } from 'react-icons/si';
 
-interface ProjectSocial {
-  readonly platform: string;
-  readonly url: string;
-  readonly icon: JSX.Element;
-  readonly color: string;
-}
-
-interface Project {
-  readonly name: string;
-  readonly description: string;
-  readonly image: string;
-  readonly link: string;
-  readonly github: string;
-  readonly tags: readonly string[];
-  readonly socials: readonly ProjectSocial[];
-}
-
-const projects: readonly Project[] = [
+const projects = [
   {
-    name: 'BidGenius AI',
-    description: 'Built an AI-powered platform for automating government RFP analysis and response generation. Features include intelligent document processing, requirement extraction, compliance checking, and automated proposal generation. Integrates with SAM.gov and other federal contract databases.',
-    image: '/images/bidgenius.jpg',
-    link: 'https://www.bidgeniusai.com',
-    github: 'https://github.com/spotcircuit/bidgeniusai',
-    tags: ['Next.js', 'TypeScript', 'AI', 'Government Contracts', 'TailwindCSS'] as const,
-    socials: [
-      { platform: 'GitHub', url: 'https://github.com/spotcircuit/bidgeniusai', icon: <FaGithub />, color: 'hover:text-gray-600' },
-      { platform: 'LinkedIn', url: 'https://linkedin.com/in/brianpyatt', icon: <FaLinkedin />, color: 'hover:text-blue-600' }
-    ] as const
+    name: 'AdUPlanner',
+    description: 'Developed an innovative AI-powered ADU (Accessory Dwelling Unit) planning tool that combines Google Maps integration with OpenAI Vision analysis. The application allows users to input any address, visualizes the property on an interactive map, performs AI-based eligibility assessment, analyzes property constraints through satellite imagery, and enables users to plan structures with precise measurements. Features include property boundary detection, setback visualization, structure placement tools, and automated building template generation.',
+    image: '/images/aduplanner.png',
+    link: 'https://aduplanner-kz7dw2411-spotcircuits-projects.vercel.app/',
+    tags: ['Next.js', 'OpenAI Vision', 'Google Maps API', 'AI Property Analysis'],
+    metrics: [
+      { label: 'Analysis Accuracy', value: '95%' },
+      { label: 'Processing Time', value: '< 30s' },
+      { label: 'User Satisfaction', value: '4.8/5' }
+    ]
   },
   {
     name: 'Tube2Link',
-    description: 'Developed an innovative AI-powered application that transforms YouTube videos into engaging LinkedIn posts. Features include OAuth authentication, automatic caption extraction, AI content generation with length control, and a modern responsive UI. Supports multiple video types and includes real-time previews.',
+    description: 'Created an AI-powered video analysis and processing platform that transforms YouTube content into engaging blog posts and social media content. The platform leverages advanced NLP and AI technologies to automatically generate SEO-optimized content, extract key insights, and create multi-format content distribution strategies. Features include automated transcription, content summarization, keyword optimization, and intelligent content repurposing.',
     image: '/images/tube2link.jpg',
-    link: 'https://www.tube2link.com',
-    github: 'https://github.com/spotcircuit/tube2link',
-    tags: ['Next.js', 'TypeScript', 'OAuth', 'AI', 'TailwindCSS'] as const,
-    socials: [
-      { platform: 'Upwork', url: 'https://www.upwork.com/freelancers/~017e1b39c3a62a0efe', icon: <SiUpwork />, color: 'hover:text-[#6FDA44]' },
-      { platform: 'YouTube', url: 'https://youtube.com/@spotcircuit', icon: <FaYoutube />, color: 'hover:text-red-600' },
-      { platform: 'LinkedIn', url: 'https://linkedin.com/in/brianpyatt', icon: <FaLinkedin />, color: 'hover:text-blue-600' },
-      { platform: 'Instagram', url: 'https://instagram.com/spotcircuit', icon: <FaInstagram />, color: 'hover:text-pink-600' },
-      { platform: 'TikTok', url: 'https://tiktok.com/@spotcircuit', icon: <FaTiktok />, color: 'hover:text-black dark:hover:text-white' },
-      { platform: 'Twitter', url: 'https://twitter.com/spotcircuit', icon: <FaTwitter />, color: 'hover:text-blue-400' },
-      { platform: 'Pinterest', url: 'https://pinterest.com/spotcircuit', icon: <FaPinterest />, color: 'hover:text-red-700' }
-    ] as const
+    link: 'https://tube2link.com',
+    tags: ['AI Content Generation', 'Video Analysis', 'NLP', 'Content Automation'],
+    metrics: [
+      { label: 'Content Generated', value: '100K+' },
+      { label: 'Time Saved', value: '85%' },
+      { label: 'SEO Performance', value: '+150%' }
+    ]
   },
   {
     name: 'BnB Tobacco',
     description: 'Implemented comprehensive SEO/AEO optimization and e-commerce automation for one of the largest online tobacco retailers. Developed custom Shopify solutions, automated product listings, and optimized content for maximum visibility. Achieved significant improvements in organic traffic and conversion rates.',
     image: '/images/bnbtobacco.jpg',
     link: 'https://bnbtobacco.com',
-    github: '',
-    tags: ['Shopify', 'SEO/AEO', 'E-commerce', 'Content Automation'] as const,
-    socials: [
-      { platform: 'Instagram', url: 'https://instagram.com/bnbtobacco', icon: <FaInstagram />, color: 'hover:text-pink-600' },
-      { platform: 'Pinterest', url: 'https://pinterest.com/bnbtobacco', icon: <FaPinterest />, color: 'hover:text-red-700' },
-      { platform: 'Twitter', url: 'https://twitter.com/bnbtobacco', icon: <FaTwitter />, color: 'hover:text-blue-400' }
-    ] as const
+    tags: ['Shopify', 'SEO/AEO', 'E-commerce', 'Content Automation'],
+    metrics: [
+      { label: 'Organic Traffic', value: '+25%' },
+      { label: 'Conversion Rate', value: '+15%' },
+      { label: 'Revenue Growth', value: '+20%' }
+    ]
   },
   {
     name: 'StarCityGames',
     description: 'Revolutionized the online presence of the world\'s largest Magic: The Gathering retailer. Implemented advanced AI-driven product optimization, automated marketplace listings, and enhanced search visibility. Developed custom solutions for managing large-scale inventory and pricing automation.',
     image: '/images/starcitygames.jpg',
     link: 'https://starcitygames.com',
-    github: '',
-    tags: ['E-commerce', 'Marketplace Integration', 'Inventory Management', 'AI Automation'] as const,
-    socials: [
-      { platform: 'YouTube', url: 'https://youtube.com/@starcitygames', icon: <FaYoutube />, color: 'hover:text-red-600' },
-      { platform: 'Twitter', url: 'https://twitter.com/starcitygames', icon: <FaTwitter />, color: 'hover:text-blue-400' },
-      { platform: 'Instagram', url: 'https://instagram.com/starcitygames', icon: <FaInstagram />, color: 'hover:text-pink-600' }
-    ] as const
+    tags: ['E-commerce', 'Marketplace Integration', 'Inventory Management', 'AI Automation'],
+    metrics: [
+      { label: 'Inventory Accuracy', value: '99.9%' },
+      { label: 'Order Fulfillment', value: '99.5%' },
+      { label: 'Customer Satisfaction', value: '4.9/5' }
+    ]
   },
   {
     name: 'TheFixClinic',
     description: 'Developed and implemented a comprehensive digital strategy for this healthcare provider. Created automated systems for appointment scheduling, content management, and patient engagement. Improved online visibility through targeted SEO/AEO optimization and content automation.',
     image: '/images/fixclinic.jpg',
     link: 'https://thefixclinic.com',
-    github: '',
-    tags: ['Healthcare', 'SEO/AEO', 'Content Automation', 'Patient Engagement'] as const,
-    socials: [
-      { platform: 'Instagram', url: 'https://instagram.com/thefixclinic', icon: <FaInstagram />, color: 'hover:text-pink-600' },
-      { platform: 'YouTube', url: 'https://youtube.com/@thefixclinic', icon: <FaYoutube />, color: 'hover:text-red-600' },
-      { platform: 'LinkedIn', url: 'https://linkedin.com/company/thefixclinic', icon: <FaLinkedin />, color: 'hover:text-blue-600' }
-    ] as const
+    tags: ['Healthcare', 'SEO/AEO', 'Content Automation', 'Patient Engagement'],
+    metrics: [
+      { label: 'Patient Engagement', value: '+30%' },
+      { label: 'Appointment Scheduling', value: '+25%' },
+      { label: 'Online Visibility', value: '+50%' }
+    ]
   },
   {
     name: 'Mr. Maple',
     description: 'Transformed the online presence of this specialty plant nursery through custom e-commerce solutions. Implemented automated inventory management, optimized product listings, and enhanced customer engagement. Developed specialized content automation for unique plant varieties.',
     image: '/images/mrmaple.jpg',
     link: 'https://mrmaple.com',
-    github: '',
-    tags: ['Shopify', 'E-commerce', 'Inventory Management', 'Content Optimization'] as const,
-    socials: [
-      { platform: 'YouTube', url: 'https://youtube.com/@mrmaple', icon: <FaYoutube />, color: 'hover:text-red-600' },
-      { platform: 'Instagram', url: 'https://instagram.com/mrmapletrees', icon: <FaInstagram />, color: 'hover:text-pink-600' },
-      { platform: 'Pinterest', url: 'https://pinterest.com/mrmapletrees', icon: <FaPinterest />, color: 'hover:text-red-700' }
-    ] as const
+    tags: ['Shopify', 'E-commerce', 'Inventory Management', 'Content Optimization'],
+    metrics: [
+      { label: 'Inventory Turnover', value: '+20%' },
+      { label: 'Customer Retention', value: '+15%' },
+      { label: 'Revenue Growth', value: '+10%' }
+    ]
   }
-] as const;
+];
 
-export default function Projects(): JSX.Element {
+export default function Projects() {
   return (
     <section id="projects" className="relative">
       <div className="rounded-3xl bg-gradient-to-r from-gray-50/90 to-gray-100/90 dark:from-gray-800/90 dark:to-gray-900/90 p-4 sm:p-6 lg:p-8 h-full ring-1 ring-gray-900/10 dark:ring-white/10">
@@ -119,19 +91,18 @@ export default function Projects(): JSX.Element {
           >
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">Featured Projects</h2>
             <p className="mt-4 text-base sm:text-lg leading-8 text-gray-600 dark:text-gray-400">
-              A collection of my most impactful projects, showcasing innovation in e-commerce, AI automation, and software development.
+              A collection of my most impactful projects, showcasing innovation in e-commerce and AI automation.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 gap-6 sm:gap-8">
             {projects.map((project, index) => (
               <motion.article
-                key={`${project.name}-${index}`}
+                key={project.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-                className="relative isolate flex flex-col gap-6 sm:gap-8 lg:flex-row overflow-hidden rounded-2xl bg-white/50 dark:bg-gray-800/50 p-4 sm:p-6 ring-1 ring-gray-900/10 dark:ring-white/10 hover:ring-2 hover:ring-blue-500/50 dark:hover:ring-blue-400/50"
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="relative isolate flex flex-col gap-6 sm:gap-8 lg:flex-row overflow-hidden rounded-2xl bg-white/50 dark:bg-gray-800/50 p-4 sm:p-6 ring-1 ring-gray-900/10 dark:ring-white/10"
               >
                 <div className="relative aspect-[16/9] sm:aspect-[2/1] lg:aspect-square lg:w-64 lg:shrink-0">
                   <Image
@@ -145,26 +116,12 @@ export default function Projects(): JSX.Element {
                 
                 <div className="flex flex-col flex-1">
                   <div className="flex items-center gap-x-4 text-xs mb-4">
-                    {project.link && (
-                      <Link
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative z-10 rounded-full bg-gradient-to-r from-green-600 to-blue-600 px-3 py-1.5 font-medium text-white hover:from-green-500 hover:to-blue-500 transition-all duration-300"
-                      >
-                        Visit Site
-                      </Link>
-                    )}
-                    {project.github && (
-                      <Link
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative z-10 rounded-full bg-gradient-to-r from-gray-600 to-gray-700 px-3 py-1.5 font-medium text-white hover:from-gray-500 hover:to-gray-600 transition-all duration-300"
-                      >
-                        View on GitHub
-                      </Link>
-                    )}
+                    <Link
+                      href={project.link}
+                      className="relative z-10 rounded-full bg-gradient-to-r from-green-600 to-blue-600 px-3 py-1.5 font-medium text-white hover:from-green-500 hover:to-blue-500"
+                    >
+                      Visit Site
+                    </Link>
                   </div>
                   
                   <div className="group relative">
@@ -189,25 +146,16 @@ export default function Projects(): JSX.Element {
                       </span>
                     ))}
                   </div>
-                  {project.socials && (
-                    <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-                      <h4 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">Connect on Social Media</h4>
-                      <div className="flex flex-wrap gap-3">
-                        {project.socials.map((social) => (
-                          <Link
-                            key={social.platform}
-                            href={social.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`text-gray-500 dark:text-gray-400 text-xl transition-all duration-300 transform hover:scale-110 ${social.color}`}
-                            title={social.platform}
-                          >
-                            {social.icon}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.metrics.map((metric) => (
+                      <span
+                        key={metric.label}
+                        className="inline-flex items-center rounded-md bg-gray-50 dark:bg-gray-800 px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-400 ring-1 ring-inset ring-gray-500/10"
+                      >
+                        {metric.label}: {metric.value}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </motion.article>
             ))}

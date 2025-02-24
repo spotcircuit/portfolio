@@ -1,6 +1,6 @@
 # Brian Pyatt - Personal Portfolio
 
-Welcome to my personal portfolio website! This site showcases my professional experience, skills, and projects.
+Welcome to my personal portfolio website! This site showcases my professional experience, skills, and projects. Visit [spotcircuit.github.io/portfolio](https://spotcircuit.github.io/portfolio) to see it live.
 
 ## 🎯 Content
 
@@ -15,10 +15,6 @@ Welcome to my personal portfolio website! This site showcases my professional ex
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-
-## 🚀 Deployment
-
-This site is deployed on [Vercel](https://vercel.com)
 
 ## 🏃‍♂️ Local Development
 
