@@ -6,6 +6,18 @@ import Link from 'next/link';
 
 const projects = [
   {
+    name: 'Make to n8n Converter',
+    description: 'Developed a professional web application that helps users convert Make.com workflows to n8n format. The tool analyzes uploaded Make.com JSON workflows, categorizes nodes by complexity, and calculates conversion costs based on a tiered pricing model. Features include drag-and-drop file upload, detailed node breakdowns, and responsive design built with Next.js and Tailwind CSS.',
+    image: '/images/make-to-n8n.jpg',
+    link: 'https://make-2-n8n.vercel.app/',
+    tags: ['Next.js', 'Tailwind CSS', 'Workflow Analysis', 'Node.js'],
+    metrics: [
+      { label: 'Conversion Accuracy', value: '97%' },
+      { label: 'Processing Time', value: '< 5s' },
+      { label: 'Support Coverage', value: '25+ node types' }
+    ]
+  },
+  {
     name: 'AdUPlanner',
     description: 'Developed an innovative AI-powered ADU (Accessory Dwelling Unit) planning tool that combines Google Maps integration with OpenAI Vision analysis. The application allows users to input any address, visualizes the property on an interactive map, performs AI-based eligibility assessment, analyzes property constraints through satellite imagery, and enables users to plan structures with precise measurements. Features include property boundary detection, setback visualization, structure placement tools, and automated building template generation.',
     image: '/images/aduplanner.png',
