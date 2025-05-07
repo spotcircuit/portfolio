@@ -444,161 +444,163 @@ export default function Hero() {
             </div>
             <div className="mt-4 sm:mt-8">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl bg-gradient-to-r from-green-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
-                AI/Automation Engineer | SEO/AEO Specialist | E-commerce Solutions Architect
+                Driving Exceptional Business Results Through Digital Innovation
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
-                With over 25 years of experience pioneering digital innovation, I specialize in crafting sophisticated AI-driven solutions 
-                that transform business operations. My expertise spans advanced SEO/AEO strategies, enterprise e-commerce optimization, 
-                and cutting-edge automation systems that drive measurable growth and efficiency.
-              </p>
-            </div>
-            <div className="mt-24">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl mb-8">
-                Expertise & Skills
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 gap-y-12 -mr-[200%]">
-                {categories.map((category) => (
-                  <motion.div
-                    key={category.title}
-                    className={`relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-50/90 to-gray-100/90 dark:from-gray-800/90 dark:to-gray-900/90 p-4
-                      backdrop-blur-sm ring-1 ring-white/5 justify-between w-full
-                      transform transition-all duration-300 hover:-translate-y-1
-                      ${category.title === 'SEO & Analytics' ? 'hover:ring-blue-500/50' : 
-                        category.title === 'Growth & CRO' ? 'hover:ring-purple-500/50' :
-                        category.title === 'Programming' ? 'hover:ring-green-500/50' :
-                        category.title === 'Tools & Platforms' ? 'hover:ring-orange-500/50' :
-                        category.title === 'AI/ML & Data' ? 'hover:ring-indigo-500/50' :
-                        'hover:ring-teal-500/50'}`}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{
-                      opacity: 1,
-                      y: 0,
-                      transition: { duration: 0.2 }
-                    }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <div className="mb-2">
-                      <h3 className={`text-lg font-semibold bg-gradient-to-r 
-                        ${category.title === 'SEO & Analytics' ? 'from-blue-600 to-blue-400' :
-                          category.title === 'Growth & CRO' ? 'from-purple-600 to-purple-400' :
-                          category.title === 'Programming' ? 'from-green-600 to-green-400' :
-                          category.title === 'Tools & Platforms' ? 'from-orange-600 to-orange-400' :
-                          category.title === 'AI/ML & Data' ? 'from-indigo-600 to-indigo-400' :
-                          'from-teal-600 to-teal-400'} 
-                        bg-clip-text text-transparent`}>
-                        {category.title}
-                      </h3>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2">
-                      {category.skills.map((skill) => {
-                        const Icon = {
-                          'shopify': SiShopify,
-                          'react': SiReact,
-                          'nextjs': SiNextdotjs,
-                          'typescript': SiTypescript,
-                          'python': SiPython,
-                          'nodejs': SiNodedotjs,
-                          'graphql': SiGraphql,
-                          'django': SiDjango,
-                          'tailwindcss': SiTailwindcss,
-                          'sass': SiSass,
-                          'webflow': SiWebflow,
-                          'docker': SiDocker,
-                          'kubernetes': SiKubernetes,
-                          'terraform': SiTerraform,
-                          'jenkins': SiJenkins,
-                          'vercel': SiVercel,
-                          'aws': SiAmazonwebservices,
-                          'gcp': SiGooglecloud,
-                          'azure': TbBolt,
-                          'openai': SiOpenai,
-                          'tensorflow': SiTensorflow,
-                          'pytorch': SiPytorch,
-                          'pandas': SiPandas,
-                          'numpy': SiNumpy,
-                          'sklearn': SiScikitlearn,
-                          'gsc': SiGooglesearchconsole,
-                          'ga': SiGoogleanalytics,
-                          'googleads': SiGoogleads,
-                          'meta': SiMeta,
-                          'hubspot': SiHubspot,
-                          'jira': SiJira,
-                          'git': SiGit,
-                          'gitlab': SiGitlab,
-                          'slack': SiSlack,
-                          'confluence': SiConfluence,
-                          'wordpress': SiWordpress,
-                          'hotjar': SiHotjar,
-                          'postman': SiPostman,
-                          'redis': SiRedis,
-                          'snowflake': SiSnowflake,
-                          'semrush': FaSearchDollar,
-                          'ahrefs': FaChartLine,
-                          'brightlocal': FaMapMarkerAlt,
-                          'surfer': TbSeo,
-                          'schema': FaCode,
-                          'localseo': FaMapMarkerAlt,
-                          'abtesting': BiTestTube,
-                          'useranalytics': SiGoogleanalytics,
-                          'revenue': FaChartLine,
-                          'market': FaSearchDollar,
-                          'growth': FaChartLine,
-                          'cro': TbChartBar,
-                          'optimize': TbChartBar,
-                          'gtm': SiGoogletagmanager,
-                          'marketing': SiMarketo,
-                          'adobe': SiAdobe,
-                          'anthropic': FaBrain,
-                          'perplexity': FaRobot,
-                          'notebook': SiJupyter,
-                          'lmstudio': TbBrandOpenai,
-                          'napkin': FaChartBar,
-                          'bigcommerce': SiBigcommerce,
-                          'gmb': FaGoogle,
-                          'merchant': FaShoppingBag,
-                          'shopping': FaShoppingCart,
-                          'javascript': SiJavascript,
-                          'php': SiPhp,
-                          'ruby': SiRuby,
-                          'go': SiGo,
-                          'supabase': SiSupabase,
-                          'netlify': SiNetlify,
-                          'bolt': TbBolt,
-                          'windsurf': FaWindows,
-                        }[skill.icon];
-                        
-                        return (
-                          <motion.div
-                            key={skill.name}
-                            whileHover={{ scale: 1.05 }}
-                            className="flex items-center gap-2 px-3 py-2 rounded-lg bg-white/50 dark:bg-gray-800/50 
-                              hover:bg-white dark:hover:bg-gray-800 ring-1 ring-white/10
-                              transform transition-all duration-200"
-                          >
-                            {Icon && <Icon className="text-lg text-gray-600 dark:text-gray-300" />}
-                            <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
-                              {skill.name}
-                            </span>
-                          </motion.div>
-                        );
-                      })}
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-            <div className="mt-12 border-t border-gray-200 dark:border-gray-800 pt-8">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-6">Industry Recognition</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {recognition[0].items.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center p-4 rounded-lg bg-gray-50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <item.icon className="w-8 h-8 mb-2 text-gray-600 dark:text-gray-400" />
-                    <h4 className="font-medium text-gray-900 dark:text-gray-100 text-center">{item.name}</h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-1">{item.description}</p>
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* BnB Tobacco */}
+                <motion.div 
+                  className="relative overflow-hidden rounded-xl p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ y: -5 }}
+                >
+                  {/* Background gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500/10 to-blue-500/10 dark:from-green-500/5 dark:to-blue-500/5"></div>
+                  
+                  {/* Content */}
+                  <div className="relative">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">BnB Tobacco</h3>
+                    <div className="h-1 w-16 bg-gradient-to-r from-green-500 to-blue-500 mb-4 rounded-full"></div>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600 dark:from-green-400 dark:to-blue-400">$15MM</span>
+                      <span className="block mt-1 mb-3">revenue in under 2 years</span>
+                      through strategic automation and SEO optimization
+                    </p>
                   </div>
-                ))}
+                </motion.div>
+
+                {/* StarCityGames */}
+                <motion.div 
+                  className="relative overflow-hidden rounded-xl p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  whileHover={{ y: -5 }}
+                >
+                  {/* Background gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 dark:from-blue-500/5 dark:to-indigo-500/5"></div>
+                  
+                  {/* Content */}
+                  <div className="relative">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">StarCityGames</h3>
+                    <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-indigo-500 mb-4 rounded-full"></div>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">38%</span>
+                      <span className="block mt-1 mb-3">increased customer retention</span>
+                      with AI customer service co-pilot and Hubspot-integrated email sequences
+                    </p>
+                  </div>
+                </motion.div>
+
+                {/* MrMaple */}
+                <motion.div 
+                  className="relative overflow-hidden rounded-xl p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  whileHover={{ y: -5 }}
+                >
+                  {/* Background gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 dark:from-indigo-500/5 dark:to-purple-500/5"></div>
+                  
+                  {/* Content */}
+                  <div className="relative">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">MrMaple</h3>
+                    <div className="h-1 w-16 bg-gradient-to-r from-indigo-500 to-purple-500 mb-4 rounded-full"></div>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">215%</span>
+                      <span className="block mt-1 mb-3">increase in qualified leads</span>
+                      via targeted SMS campaigns and outreach automation
+                    </p>
+                  </div>
+                </motion.div>
+
+                {/* The Fix Clinic */}
+                <motion.div 
+                  className="relative overflow-hidden rounded-xl p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  whileHover={{ y: -5 }}
+                >
+                  {/* Background gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 dark:from-purple-500/5 dark:to-pink-500/5"></div>
+                  
+                  {/* Content */}
+                  <div className="relative">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">The Fix Clinic</h3>
+                    <div className="h-1 w-16 bg-gradient-to-r from-purple-500 to-pink-500 mb-4 rounded-full"></div>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400">92% & 4.7x</span>
+                      <span className="block mt-1 mb-3">more leads and reviews</span>
+                      through automated outreach systems and review generation
+                    </p>
+                  </div>
+                </motion.div>
+
+                {/* 24-7 Roof Restoration */}
+                <motion.div 
+                  className="relative overflow-hidden rounded-xl p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  whileHover={{ y: -5 }}
+                >
+                  {/* Background gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-red-500/10 dark:from-pink-500/5 dark:to-red-500/5"></div>
+                  
+                  {/* Content */}
+                  <div className="relative">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">24-7 Roof Restoration</h3>
+                    <div className="h-1 w-16 bg-gradient-to-r from-pink-500 to-red-500 mb-4 rounded-full"></div>
+                    <p className="text-gray-700 dark:text-gray-300">
+                      <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-red-600 dark:from-pink-400 dark:to-red-400">76%</span>
+                      <span className="block mt-1 mb-3">improved recruitment quality</span>
+                      with sales training and workflow automation systems
+                    </p>
+                  </div>
+                </motion.div>
+                
+                {/* SpotCircuit */}
+                <motion.div 
+                  className="relative overflow-hidden rounded-xl p-6 bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  whileHover={{ y: -5 }}
+                >
+                  {/* Background gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-orange-500/10 dark:from-amber-500/5 dark:to-orange-500/5"></div>
+                  
+                  {/* Content */}
+                  <div className="relative">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">SpotCircuit</h3>
+                    <div className="h-1 w-16 bg-gradient-to-r from-amber-500 to-orange-500 mb-4 rounded-full"></div>
+                    <ul className="text-gray-700 dark:text-gray-300 space-y-2">
+                      <li className="flex items-start">
+                        <span className="text-amber-500 mr-2">•</span>
+                        <span><span className="font-semibold">250+</span> clients served with custom automation</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-amber-500 mr-2">•</span>
+                        <span><span className="font-semibold">3,500+</span> qualified leads generated</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-amber-500 mr-2">•</span>
+                        <span><span className="font-semibold">12,000+</span> hours saved through workflow automation</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-amber-500 mr-2">•</span>
+                        <span><span className="font-semibold">85%</span> average efficiency improvement</span>
+                      </li>
+                    </ul>
+                  </div>
+                </motion.div>
               </div>
             </div>
+
+
             <div className="mt-10 flex items-center gap-x-6">
               <Link
                 href="#contact"
@@ -622,7 +624,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[170%] skew-x-[-30deg] bg-white dark:bg-gray-800 shadow-xl shadow-green-600/10 ring-1 ring-green-50 dark:ring-green-900 md:-mr-20 lg:-mr-36" aria-hidden="true" />
-          <div className="shadow-lg md:rounded-3xl">
+          <div className="shadow-lg md:rounded-3xl" style={{ height: '1300px' }}>
             <div className="bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
               <div className="absolute inset-y-0 left-1/2 -z-10 ml-10 w-[170%] skew-x-[-30deg] bg-green-100 dark:bg-green-800 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36" aria-hidden="true" />
               <div className="relative px-6 pt-4 sm:pt-8 md:pl-16">
@@ -662,7 +664,7 @@ export default function Hero() {
                         </button>
                       ))}
                     </div>
-                    <div className="h-[48rem] overflow-y-auto mt-6 relative">
+                    <div className="h-[80rem] overflow-y-auto mt-6 relative">
                       <pre className="p-4">
                         <code className="language-typescript text-sm text-gray-100">
                           {codeContent[activeTab]}

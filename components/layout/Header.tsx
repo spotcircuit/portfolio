@@ -8,9 +8,9 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigation = [
-    { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
+    { name: 'Expertise & Skills', href: '#skills' },
+    { name: 'About', href: '#about' },
     { name: 'SpotCircuit', href: 'https://www.spotcircuit.com', external: true },
     { name: 'Contact', href: '#contact' },
   ];
