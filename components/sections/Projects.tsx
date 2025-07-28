@@ -18,15 +18,75 @@ const projects = [
     ]
   },
   {
-    name: 'RoofMaster',
-    description: 'Engineered a comprehensive roofing business management platform with an advanced sales training module. The system features interactive video-based learning, knowledge assessment tests, and groundbreaking AI-powered voice simulations for real-time practice with virtual customer personas. The dashboard provides real-time analytics, customer management, job scheduling, and financial tracking in an intuitive interface. Additional features include interactive project timelines, weather-aware scheduling, material estimation, and automated customer communications. Built with Next.js, Tailwind CSS, and integrated with OpenAI for voice simulations.',
+    name: '24/7 Roof Restoration - Hail Alert System',
+    description: 'Engineered an advanced hail damage detection and alert system using n8n workflow automation and AI-powered weather data analysis. The system monitors real-time weather patterns, automatically identifies hail events in service areas, and triggers immediate notifications to field teams. Features include automated damage verification through satellite imagery analysis, predictive modeling for affected neighborhoods, instant lead generation with property details, and integrated CRM updates. The workflow processes weather API data, cross-references with customer databases, and generates prioritized response lists for rapid deployment. Built with n8n, OpenWeatherMap API, satellite imagery APIs, and custom AI models for damage assessment.',
+    image: '/images/hail-alert.svg',
+    link: '#',
+    tags: ['n8n Automation', 'AI Weather Analysis', 'Lead Generation', 'Real-time Monitoring'],
+    metrics: [
+      { label: 'Response Time', value: '-75%' },
+      { label: 'Lead Conversion', value: '+60%' },
+      { label: 'Coverage Accuracy', value: '98%' }
+    ]
+  },
+  {
+    name: 'AI-Recruiter - LinkedIn Talent Discovery',
+    description: 'Developed an intelligent recruiting workflow system that automates talent discovery and outreach on LinkedIn. The platform uses advanced AI to analyze job requirements, search for matching candidates based on skills and experience, and evaluate cultural fit through profile analysis. Features include automated Boolean search generation, AI-powered candidate scoring, personalized outreach message generation using GPT-4, automated follow-up sequences, and integration with ATS systems. The n8n workflow orchestrates LinkedIn scraping, candidate evaluation, and multi-channel outreach campaigns. Built with n8n, LinkedIn API, OpenAI GPT-4, and custom scoring algorithms.',
+    image: '/images/ai-recruiter.svg',
+    link: '#',
+    tags: ['n8n Workflows', 'AI Talent Matching', 'LinkedIn Automation', 'GPT-4 Integration'],
+    metrics: [
+      { label: 'Sourcing Time', value: '-80%' },
+      { label: 'Response Rate', value: '+45%' },
+      { label: 'Quality Score', value: '92%' }
+    ]
+  },
+  {
+    name: 'Picton Luxury Car Rental - Automated Marketing',
+    description: 'Created a sophisticated customer acquisition and retention system for high-end luxury car rentals. The platform combines AI-driven customer profiling with automated multi-channel marketing campaigns. Features include predictive analytics for identifying high-value prospects, personalized SMS and email campaigns with dynamic offers, automated booking reminders and upsells, VIP customer journey mapping, and integration with CRM for lifetime value optimization. The n8n workflows handle data enrichment, campaign orchestration, and response tracking. Built with n8n, Twilio for SMS, SendGrid for email, and custom AI models for customer segmentation.',
+    image: '/images/picton-luxury.svg',
+    link: '#',
+    tags: ['Marketing Automation', 'AI Customer Profiling', 'Multi-channel Campaigns', 'n8n'],
+    metrics: [
+      { label: 'Customer Acquisition', value: '+55%' },
+      { label: 'Booking Value', value: '+40%' },
+      { label: 'ROI', value: '320%' }
+    ]
+  },
+  {
+    name: 'Taskifye - Service Business Management Platform',
+    description: 'Built a comprehensive service management platform rivaling ServiceTitan, designed specifically for HVAC, plumbing, and electrical businesses. The platform features AI-powered scheduling optimization, intelligent dispatch routing, automated customer communications, real-time technician tracking, and predictive maintenance alerts. Includes an AI receptionist that handles calls, books appointments, and answers service questions 24/7. The system also features automated invoicing, inventory management, customer portal, and advanced analytics dashboards. Integrated with multiple communication channels and payment processors. Built with Next.js, Node.js, PostgreSQL, and various AI services including voice synthesis and NLP.',
+    image: '/images/taskifye.svg',
+    link: 'https://taskifye.com',
+    tags: ['SaaS Platform', 'AI Receptionist', 'Service Management', 'Voice AI'],
+    metrics: [
+      { label: 'Call Handling', value: '24/7' },
+      { label: 'Scheduling Efficiency', value: '+65%' },
+      { label: 'Customer Satisfaction', value: '4.9/5' }
+    ]
+  },
+  {
+    name: 'Real Estate Coach - Social Media Automation',
+    description: 'Developed an AI-powered social media monitoring and engagement system for real estate coaching businesses. The platform continuously scans Facebook and LinkedIn groups for relevant discussions, identifies potential coaching opportunities, and automatically generates contextual responses. Features include keyword-based post detection, sentiment analysis for engagement timing, AI-generated responses tailored to coaching methodology, automated funnel creation with landing pages, and comprehensive analytics on engagement effectiveness. The n8n workflows orchestrate social media APIs, content generation, and CRM integration. Built with n8n, Facebook Graph API, LinkedIn API, and OpenAI for response generation.',
+    image: '/images/realestate-coach.svg',
+    link: '#',
+    tags: ['Social Media Automation', 'AI Content Generation', 'Lead Funnel', 'n8n'],
+    metrics: [
+      { label: 'Lead Generation', value: '+120%' },
+      { label: 'Engagement Rate', value: '35%' },
+      { label: 'Conversion', value: '+75%' }
+    ]
+  },
+  {
+    name: 'RoofMaster - AI Sales Training Platform',
+    description: 'Engineered a revolutionary sales training platform for 24/7 Roof Restoration featuring AI-powered role-playing scenarios. The system includes an advanced AI module where sales staff practice with virtual clients presenting various objections and scenarios. Features include real-time voice conversations with AI personas simulating difficult customers, adaptive difficulty levels based on performance, comprehensive objection handling training, and automated grading of responses. After completing training modules, staff take AI-graded written assessments that evaluate product knowledge, sales techniques, and customer service skills. The platform tracks individual progress, identifies areas for improvement, and provides personalized coaching recommendations. Built with Next.js, OpenAI voice models, and custom assessment algorithms.',
     image: '/images/roofmaster.png',
     link: 'https://roofmaster-lemon.vercel.app/dashboard',
-    tags: ['Next.js', 'AI Voice Simulation', 'Interactive Training', 'Business Management'],
+    tags: ['AI Voice Training', 'Sales Enablement', 'Automated Assessment', 'OpenAI Integration'],
     metrics: [
       { label: 'Sales Conversion', value: '+42%' },
-      { label: 'Training Completion', value: '95%' },
-      { label: 'Customer Satisfaction', value: '4.9/5' }
+      { label: 'Training Effectiveness', value: '+85%' },
+      { label: 'Objection Handling', value: '95%' }
     ]
   },
   {

@@ -1,0 +1,83 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="linkedinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0077B5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#005582;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#bgGradient2)"/>
+  
+  <!-- LinkedIn logo area -->
+  <rect x="100" y="200" width="80" height="80" rx="8" fill="url(#linkedinGradient)"/>
+  <text x="140" y="250" text-anchor="middle" fill="white" font-size="48" font-weight="bold">in</text>
+  
+  <!-- AI Brain icon -->
+  <g transform="translate(500, 250)">
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#818cf8" stroke-width="3"/>
+    <circle cx="100" cy="100" r="60" fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Neural network nodes -->
+    <circle cx="100" cy="100" r="8" fill="#c084fc"/>
+    <circle cx="70" cy="80" r="6" fill="#e879f9"/>
+    <circle cx="130" cy="80" r="6" fill="#e879f9"/>
+    <circle cx="70" cy="120" r="6" fill="#e879f9"/>
+    <circle cx="130" cy="120" r="6" fill="#e879f9"/>
+    <circle cx="100" cy="60" r="6" fill="#e879f9"/>
+    <circle cx="100" cy="140" r="6" fill="#e879f9"/>
+    
+    <!-- Connections -->
+    <line x1="100" y1="100" x2="70" y2="80" stroke="#818cf8" stroke-width="1" opacity="0.5"/>
+    <line x1="100" y1="100" x2="130" y2="80" stroke="#818cf8" stroke-width="1" opacity="0.5"/>
+    <line x1="100" y1="100" x2="70" y2="120" stroke="#818cf8" stroke-width="1" opacity="0.5"/>
+    <line x1="100" y1="100" x2="130" y2="120" stroke="#818cf8" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Candidate profiles -->
+  <g transform="translate(850, 200)">
+    <rect x="0" y="0" width="250" height="80" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <circle cx="40" cy="40" r="20" fill="#64748b"/>
+    <text x="70" y="30" fill="#e2e8f0" font-size="14">Senior Developer</text>
+    <text x="70" y="50" fill="#94a3b8" font-size="12">Match: 95%</text>
+  </g>
+  
+  <g transform="translate(850, 300)">
+    <rect x="0" y="0" width="250" height="80" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <circle cx="40" cy="40" r="20" fill="#64748b"/>
+    <text x="70" y="30" fill="#e2e8f0" font-size="14">Tech Lead</text>
+    <text x="70" y="50" fill="#94a3b8" font-size="12">Match: 92%</text>
+  </g>
+  
+  <g transform="translate(850, 400)">
+    <rect x="0" y="0" width="250" height="80" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <circle cx="40" cy="40" r="20" fill="#64748b"/>
+    <text x="70" y="30" fill="#e2e8f0" font-size="14">Full Stack Engineer</text>
+    <text x="70" y="50" fill="#94a3b8" font-size="12">Match: 88%</text>
+  </g>
+  
+  <!-- Workflow arrows -->
+  <path d="M 200 240 Q 350 240 500 300" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 700 350 Q 775 350 850 240" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 700 350 Q 775 350 850 340" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 700 350 Q 775 350 850 440" fill="none" stroke="#60a5fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="white" font-size="48" font-weight="bold">AI-Recruiter Platform</text>
+  <text x="600" y="120" text-anchor="middle" fill="#94a3b8" font-size="24">Intelligent LinkedIn Talent Discovery & Outreach</text>
+  
+  <!-- n8n badge -->
+  <rect x="50" y="50" width="80" height="30" rx="15" fill="#ff6b6b"/>
+  <text x="90" y="70" text-anchor="middle" fill="white" font-size="16" font-weight="bold">n8n</text>
+</svg>

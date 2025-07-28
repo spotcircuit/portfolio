@@ -1,0 +1,85 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="luxuryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#18181b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27272a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#luxuryGradient)"/>
+  
+  <!-- Luxury car silhouette -->
+  <g transform="translate(100, 280)">
+    <path d="M 50 80 Q 100 60 200 60 L 280 60 Q 320 60 340 80 L 340 100 Q 340 120 320 120 L 80 120 Q 50 120 50 100 Z" fill="#3f3f46"/>
+    <path d="M 80 60 Q 90 40 120 40 L 200 40 Q 240 40 260 60" fill="#3f3f46"/>
+    <circle cx="100" cy="120" r="20" fill="#18181b"/>
+    <circle cx="100" cy="120" r="15" fill="#52525b"/>
+    <circle cx="270" cy="120" r="20" fill="#18181b"/>
+    <circle cx="270" cy="120" r="15" fill="#52525b"/>
+  </g>
+  
+  <!-- Phone with SMS -->
+  <g transform="translate(500, 200)">
+    <rect x="0" y="0" width="180" height="320" rx="20" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <rect x="10" y="40" width="160" height="240" rx="10" fill="#18181b"/>
+    
+    <!-- SMS messages -->
+    <rect x="20" y="60" width="140" height="40" rx="20" fill="#3b82f6"/>
+    <text x="30" y="80" fill="white" font-size="12">Special offer: 20% off</text>
+    <text x="30" y="95" fill="white" font-size="12">Lamborghini this week!</text>
+    
+    <rect x="20" y="110" width="120" height="30" rx="15" fill="#3b82f6"/>
+    <text x="30" y="130" fill="white" font-size="12">Book now →</text>
+  </g>
+  
+  <!-- Email icon -->
+  <g transform="translate(750, 250)">
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <path d="M 10 10 L 100 60 L 190 10" fill="none" stroke="#fbbf24" stroke-width="3"/>
+    <text x="100" y="90" text-anchor="middle" fill="#e4e4e7" font-size="14">Personalized</text>
+    <text x="100" y="110" text-anchor="middle" fill="#e4e4e7" font-size="14">Email Campaign</text>
+  </g>
+  
+  <!-- Customer profiles with AI scoring -->
+  <g transform="translate(100, 450)">
+    <rect x="0" y="0" width="300" height="60" rx="8" fill="#27272a" stroke="url(#goldGradient)" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#52525b"/>
+    <text x="55" y="25" fill="#fbbf24" font-size="14" font-weight="bold">VIP Client</text>
+    <text x="55" y="45" fill="#a1a1aa" font-size="12">Lifetime Value: $125,000</text>
+    <rect x="250" y="15" width="40" height="30" rx="15" fill="url(#goldGradient)"/>
+    <text x="270" y="35" text-anchor="middle" fill="#18181b" font-size="12" font-weight="bold">98%</text>
+  </g>
+  
+  <g transform="translate(450, 450)">
+    <rect x="0" y="0" width="300" height="60" rx="8" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#52525b"/>
+    <text x="55" y="25" fill="#e4e4e7" font-size="14">Premium Client</text>
+    <text x="55" y="45" fill="#a1a1aa" font-size="12">Lifetime Value: $85,000</text>
+    <rect x="250" y="15" width="40" height="30" rx="15" fill="#60a5fa"/>
+    <text x="270" y="35" text-anchor="middle" fill="white" font-size="12" font-weight="bold">92%</text>
+  </g>
+  
+  <g transform="translate(800, 450)">
+    <rect x="0" y="0" width="300" height="60" rx="8" fill="#27272a" stroke="#3f3f46" stroke-width="2"/>
+    <circle cx="30" cy="30" r="15" fill="#52525b"/>
+    <text x="55" y="25" fill="#e4e4e7" font-size="14">New Prospect</text>
+    <text x="55" y="45" fill="#a1a1aa" font-size="12">Potential Value: $50,000</text>
+    <rect x="250" y="15" width="40" height="30" rx="15" fill="#10b981"/>
+    <text x="270" y="35" text-anchor="middle" fill="white" font-size="12" font-weight="bold">85%</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="white" font-size="48" font-weight="bold">Picton Luxury Car Rental</text>
+  <text x="600" y="120" text-anchor="middle" fill="url(#goldGradient)" font-size="24">AI-Powered Customer Acquisition & Retention</text>
+  
+  <!-- n8n workflow indicator -->
+  <g transform="translate(1050, 50)">
+    <rect x="0" y="0" width="100" height="40" rx="20" fill="#ff6b6b"/>
+    <text x="50" y="28" text-anchor="middle" fill="white" font-size="18" font-weight="bold">n8n</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="coachGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4c1d95;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fbGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1877f2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1864d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="linkedinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0077B5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#005582;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="675" fill="url(#coachGradient)"/>
+  
+  <!-- Social Media Icons -->
+  <g transform="translate(100, 200)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="url(#fbGradient)"/>
+    <text x="30" y="40" text-anchor="middle" fill="white" font-size="30" font-weight="bold">f</text>
+  </g>
+  
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="url(#linkedinGrad)"/>
+    <text x="30" y="40" text-anchor="middle" fill="white" font-size="24" font-weight="bold">in</text>
+  </g>
+  
+  <!-- Social Media Posts Detection -->
+  <g transform="translate(200, 180)">
+    <rect x="0" y="0" width="350" height="80" rx="8" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="#6b7280"/>
+    <text x="50" y="30" fill="#e5e7eb" font-size="14" font-weight="bold">Real Estate Newbie</text>
+    <text x="30" y="55" fill="#d1d5db" font-size="12">"How do I find my first clients?"</text>
+    <rect x="290" y="15" width="50" height="25" rx="12" fill="#10b981"/>
+    <text x="315" y="32" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Match!</text>
+  </g>
+  
+  <g transform="translate(200, 270)">
+    <rect x="0" y="0" width="350" height="80" rx="8" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="#6b7280"/>
+    <text x="50" y="30" fill="#e5e7eb" font-size="14" font-weight="bold">Aspiring Agent</text>
+    <text x="30" y="55" fill="#d1d5db" font-size="12">"Best strategies for open houses?"</text>
+    <rect x="290" y="15" width="50" height="25" rx="12" fill="#10b981"/>
+    <text x="315" y="32" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Match!</text>
+  </g>
+  
+  <!-- AI Response Generation -->
+  <g transform="translate(600, 200)">
+    <rect x="0" y="0" width="450" height="120" rx="10" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+    <text x="20" y="30" fill="#f3f4f6" font-size="16" font-weight="bold">AI-Generated Response:</text>
+    <text x="20" y="55" fill="#d1d5db" font-size="12">"Great question! Finding your first clients starts with</text>
+    <text x="20" y="75" fill="#d1d5db" font-size="12">building authentic relationships. I've helped 500+ agents</text>
+    <text x="20" y="95" fill="#d1d5db" font-size="12">launch successful careers. Check out my free guide..."</text>
+  </g>
+  
+  <!-- Funnel Visualization -->
+  <g transform="translate(700, 350)">
+    <path d="M 0 0 L 300 0 L 250 60 L 50 60 Z" fill="#8b5cf6" opacity="0.8"/>
+    <text x="150" y="35" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Social Engagement</text>
+    
+    <path d="M 50 70 L 250 70 L 200 130 L 100 130 Z" fill="#7c3aed" opacity="0.8"/>
+    <text x="150" y="105" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Landing Page</text>
+    
+    <path d="M 100 140 L 200 140 L 175 200 L 125 200 Z" fill="#6d28d9" opacity="0.8"/>
+    <text x="150" y="175" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Email Nurture</text>
+    
+    <path d="M 125 210 L 175 210 L 165 250 L 135 250 Z" fill="#5b21b6" opacity="0.8"/>
+    <text x="150" y="235" text-anchor="middle" fill="white" font-size="12" font-weight="bold">Client</text>
+  </g>
+  
+  <!-- Analytics Dashboard -->
+  <g transform="translate(100, 400)">
+    <rect x="0" y="0" width="500" height="150" rx="10" fill="#1f2937" stroke="#374151" stroke-width="2"/>
+    <text x="20" y="30" fill="#f3f4f6" font-size="18" font-weight="bold">Performance Metrics</text>
+    
+    <g transform="translate(20, 50)">
+      <rect x="0" y="0" width="140" height="70" rx="5" fill="#374151"/>
+      <text x="70" y="30" text-anchor="middle" fill="#10b981" font-size="24" font-weight="bold">2,847</text>
+      <text x="70" y="55" text-anchor="middle" fill="#9ca3af" font-size="12">Posts Analyzed</text>
+    </g>
+    
+    <g transform="translate(180, 50)">
+      <rect x="0" y="0" width="140" height="70" rx="5" fill="#374151"/>
+      <text x="70" y="30" text-anchor="middle" fill="#3b82f6" font-size="24" font-weight="bold">342</text>
+      <text x="70" y="55" text-anchor="middle" fill="#9ca3af" font-size="12">Responses Sent</text>
+    </g>
+    
+    <g transform="translate(340, 50)">
+      <rect x="0" y="0" width="140" height="70" rx="5" fill="#374151"/>
+      <text x="70" y="30" text-anchor="middle" fill="#8b5cf6" font-size="24" font-weight="bold">127</text>
+      <text x="70" y="55" text-anchor="middle" fill="#9ca3af" font-size="12">New Leads</text>
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="white" font-size="48" font-weight="bold">Real Estate Coach Automation</text>
+  <text x="600" y="120" text-anchor="middle" fill="#e9d5ff" font-size="24">AI-Powered Social Media Engagement & Lead Generation</text>
+  
+  <!-- n8n badge -->
+  <rect x="1050" y="50" width="100" height="40" rx="20" fill="#ff6b6b"/>
+  <text x="1100" y="75" text-anchor="middle" fill="white" font-size="18" font-weight="bold">n8n</text>
+</svg>
